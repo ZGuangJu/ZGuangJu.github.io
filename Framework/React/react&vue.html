@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React 和 Vue 对比总结 | GuangJu&#39;S NoteBook</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/linktolink.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.40853667.css" as="style"><link rel="preload" href="/assets/js/app.acb9cd7c.js" as="script"><link rel="preload" href="/assets/js/3.76545830.js" as="script"><link rel="preload" href="/assets/js/1.12bc23b5.js" as="script"><link rel="preload" href="/assets/js/26.35c782b8.js" as="script"><link rel="prefetch" href="/assets/js/10.71f49e58.js"><link rel="prefetch" href="/assets/js/100.568eec07.js"><link rel="prefetch" href="/assets/js/101.f75de0ff.js"><link rel="prefetch" href="/assets/js/102.a36c9b9c.js"><link rel="prefetch" href="/assets/js/103.8cbc8a8f.js"><link rel="prefetch" href="/assets/js/104.5247c211.js"><link rel="prefetch" href="/assets/js/105.4753fb1b.js"><link rel="prefetch" href="/assets/js/106.b0e86d49.js"><link rel="prefetch" href="/assets/js/107.e4579500.js"><link rel="prefetch" href="/assets/js/108.36c92521.js"><link rel="prefetch" href="/assets/js/109.d2382581.js"><link rel="prefetch" href="/assets/js/11.0eec3018.js"><link rel="prefetch" href="/assets/js/110.1d56a1c7.js"><link rel="prefetch" href="/assets/js/111.4ec8a304.js"><link rel="prefetch" href="/assets/js/112.286126e5.js"><link rel="prefetch" href="/assets/js/113.88c89f56.js"><link rel="prefetch" href="/assets/js/114.d6f0c25d.js"><link rel="prefetch" href="/assets/js/115.a07730f9.js"><link rel="prefetch" href="/assets/js/116.de8b0c73.js"><link rel="prefetch" href="/assets/js/117.9be44c87.js"><link rel="prefetch" href="/assets/js/118.e281b966.js"><link rel="prefetch" href="/assets/js/119.c03cb8ce.js"><link rel="prefetch" href="/assets/js/12.d202d19c.js"><link rel="prefetch" href="/assets/js/120.c54a2e80.js"><link rel="prefetch" href="/assets/js/121.7a12f2a8.js"><link rel="prefetch" href="/assets/js/122.0b678b92.js"><link rel="prefetch" href="/assets/js/123.26c00b81.js"><link rel="prefetch" href="/assets/js/124.eeaa333d.js"><link rel="prefetch" href="/assets/js/125.99d26dc0.js"><link rel="prefetch" href="/assets/js/126.13fca0a9.js"><link rel="prefetch" href="/assets/js/127.8054b73d.js"><link rel="prefetch" href="/assets/js/128.7accebb8.js"><link rel="prefetch" href="/assets/js/129.08811073.js"><link rel="prefetch" href="/assets/js/13.484e01df.js"><link rel="prefetch" href="/assets/js/130.c9b6e8dc.js"><link rel="prefetch" href="/assets/js/131.f8f1d0cf.js"><link rel="prefetch" href="/assets/js/132.7864f0c5.js"><link rel="prefetch" href="/assets/js/133.aeafdd91.js"><link rel="prefetch" href="/assets/js/134.8a218b55.js"><link rel="prefetch" href="/assets/js/135.befc3a22.js"><link rel="prefetch" href="/assets/js/136.ec32cf2d.js"><link rel="prefetch" href="/assets/js/137.7ac0f702.js"><link rel="prefetch" href="/assets/js/138.72bfc9c2.js"><link rel="prefetch" href="/assets/js/139.5a863a01.js"><link rel="prefetch" href="/assets/js/14.290cb36e.js"><link rel="prefetch" href="/assets/js/140.f27f28e2.js"><link rel="prefetch" href="/assets/js/141.7565a60f.js"><link rel="prefetch" href="/assets/js/142.2e64f412.js"><link rel="prefetch" href="/assets/js/143.48ee7de5.js"><link rel="prefetch" href="/assets/js/144.bf60a6cf.js"><link rel="prefetch" href="/assets/js/145.b29e0081.js"><link rel="prefetch" href="/assets/js/146.aebadec9.js"><link rel="prefetch" href="/assets/js/147.ef81f716.js"><link rel="prefetch" href="/assets/js/148.37b1436d.js"><link rel="prefetch" href="/assets/js/149.137674ab.js"><link rel="prefetch" href="/assets/js/15.378109e6.js"><link rel="prefetch" href="/assets/js/150.6ac29410.js"><link rel="prefetch" href="/assets/js/151.1d8978fe.js"><link rel="prefetch" href="/assets/js/152.4dd1caa4.js"><link rel="prefetch" href="/assets/js/153.f71dc98b.js"><link rel="prefetch" href="/assets/js/154.9c3e6922.js"><link rel="prefetch" href="/assets/js/155.566eb07c.js"><link rel="prefetch" href="/assets/js/156.5773ac6d.js"><link rel="prefetch" href="/assets/js/157.733c74ae.js"><link rel="prefetch" href="/assets/js/158.368fe751.js"><link rel="prefetch" href="/assets/js/159.af79d3a4.js"><link rel="prefetch" href="/assets/js/16.22008244.js"><link rel="prefetch" href="/assets/js/160.5c7e9b39.js"><link rel="prefetch" href="/assets/js/161.2bc6524a.js"><link rel="prefetch" href="/assets/js/162.c323c71d.js"><link rel="prefetch" href="/assets/js/163.7352c855.js"><link rel="prefetch" href="/assets/js/164.adba7776.js"><link rel="prefetch" href="/assets/js/165.e4a9f519.js"><link rel="prefetch" href="/assets/js/166.97a8e6db.js"><link rel="prefetch" href="/assets/js/167.34910ef7.js"><link rel="prefetch" href="/assets/js/168.d6752a23.js"><link rel="prefetch" href="/assets/js/169.0575e7f3.js"><link rel="prefetch" href="/assets/js/17.c411d0bf.js"><link rel="prefetch" href="/assets/js/170.2b8d6ca6.js"><link rel="prefetch" href="/assets/js/171.77c53d3c.js"><link rel="prefetch" href="/assets/js/172.94f34ed8.js"><link rel="prefetch" href="/assets/js/173.78ebf17d.js"><link rel="prefetch" href="/assets/js/174.0a6b1bb2.js"><link rel="prefetch" href="/assets/js/175.50f7de76.js"><link rel="prefetch" href="/assets/js/176.ce8cdbd8.js"><link rel="prefetch" href="/assets/js/177.7b4ebf0a.js"><link rel="prefetch" href="/assets/js/178.6a863fac.js"><link rel="prefetch" href="/assets/js/179.df719de9.js"><link rel="prefetch" href="/assets/js/18.49ce348e.js"><link rel="prefetch" href="/assets/js/180.232da06a.js"><link rel="prefetch" href="/assets/js/181.e8a15aa9.js"><link rel="prefetch" href="/assets/js/19.457b97c4.js"><link rel="prefetch" href="/assets/js/20.3a3cbf21.js"><link rel="prefetch" href="/assets/js/21.8e717d10.js"><link rel="prefetch" href="/assets/js/22.49e03d3a.js"><link rel="prefetch" href="/assets/js/23.735c371c.js"><link rel="prefetch" href="/assets/js/24.b5fb66f0.js"><link rel="prefetch" href="/assets/js/25.d6bd260b.js"><link rel="prefetch" href="/assets/js/27.becc04e9.js"><link rel="prefetch" href="/assets/js/28.b52d36a0.js"><link rel="prefetch" href="/assets/js/29.b32db475.js"><link rel="prefetch" href="/assets/js/30.98df5e0f.js"><link rel="prefetch" href="/assets/js/31.3f39a854.js"><link rel="prefetch" href="/assets/js/32.cfb80a2b.js"><link rel="prefetch" href="/assets/js/33.04afbac5.js"><link rel="prefetch" href="/assets/js/34.9bcb7959.js"><link rel="prefetch" href="/assets/js/35.e711be96.js"><link rel="prefetch" href="/assets/js/36.51d1f0b7.js"><link rel="prefetch" href="/assets/js/37.ed4ff1f2.js"><link rel="prefetch" href="/assets/js/38.5d00a06b.js"><link rel="prefetch" href="/assets/js/39.933e3c46.js"><link rel="prefetch" href="/assets/js/4.26c14f14.js"><link rel="prefetch" href="/assets/js/40.fe55c56b.js"><link rel="prefetch" href="/assets/js/41.612f7aae.js"><link rel="prefetch" href="/assets/js/42.591dbd1e.js"><link rel="prefetch" href="/assets/js/43.75a4b33e.js"><link rel="prefetch" href="/assets/js/44.1215c578.js"><link rel="prefetch" href="/assets/js/45.25e5278d.js"><link rel="prefetch" href="/assets/js/46.3772feb9.js"><link rel="prefetch" href="/assets/js/47.7c8fc33b.js"><link rel="prefetch" href="/assets/js/48.2865ac61.js"><link rel="prefetch" href="/assets/js/49.ec4f4be9.js"><link rel="prefetch" href="/assets/js/5.4ff0b5b6.js"><link rel="prefetch" href="/assets/js/50.5b401113.js"><link rel="prefetch" href="/assets/js/51.b563e194.js"><link rel="prefetch" href="/assets/js/52.bb519887.js"><link rel="prefetch" href="/assets/js/53.72717d06.js"><link rel="prefetch" href="/assets/js/54.ac236639.js"><link rel="prefetch" href="/assets/js/55.bff3c62e.js"><link rel="prefetch" href="/assets/js/56.0b4ef2b1.js"><link rel="prefetch" href="/assets/js/57.1806e275.js"><link rel="prefetch" href="/assets/js/58.3dfda0a9.js"><link rel="prefetch" href="/assets/js/59.adab08ca.js"><link rel="prefetch" href="/assets/js/6.4ed370e9.js"><link rel="prefetch" href="/assets/js/60.171754d7.js"><link rel="prefetch" href="/assets/js/61.450814c1.js"><link rel="prefetch" href="/assets/js/62.c070075c.js"><link rel="prefetch" href="/assets/js/63.334277a8.js"><link rel="prefetch" href="/assets/js/64.b5c9918e.js"><link rel="prefetch" href="/assets/js/65.e110a4f6.js"><link rel="prefetch" href="/assets/js/66.ec34322a.js"><link rel="prefetch" href="/assets/js/67.b478b5e8.js"><link rel="prefetch" href="/assets/js/68.a27bada6.js"><link rel="prefetch" href="/assets/js/69.58a6969b.js"><link rel="prefetch" href="/assets/js/7.1445cdc6.js"><link rel="prefetch" href="/assets/js/70.177fb6e3.js"><link rel="prefetch" href="/assets/js/71.48c15abd.js"><link rel="prefetch" href="/assets/js/72.280a39be.js"><link rel="prefetch" href="/assets/js/73.a53e010c.js"><link rel="prefetch" href="/assets/js/74.572ef5ba.js"><link rel="prefetch" href="/assets/js/75.d676daec.js"><link rel="prefetch" href="/assets/js/76.0f273ed9.js"><link rel="prefetch" href="/assets/js/77.31051b23.js"><link rel="prefetch" href="/assets/js/78.4066d9cc.js"><link rel="prefetch" href="/assets/js/79.0d3aa56a.js"><link rel="prefetch" href="/assets/js/8.bc731f91.js"><link rel="prefetch" href="/assets/js/80.d79f7210.js"><link rel="prefetch" href="/assets/js/81.3418c513.js"><link rel="prefetch" href="/assets/js/82.d18b7d2a.js"><link rel="prefetch" href="/assets/js/83.9c3f5393.js"><link rel="prefetch" href="/assets/js/84.7ac0b669.js"><link rel="prefetch" href="/assets/js/85.c51949d6.js"><link rel="prefetch" href="/assets/js/86.b316ed4e.js"><link rel="prefetch" href="/assets/js/87.388e4e03.js"><link rel="prefetch" href="/assets/js/88.90bda8ff.js"><link rel="prefetch" href="/assets/js/89.3c4ac2ea.js"><link rel="prefetch" href="/assets/js/9.00729029.js"><link rel="prefetch" href="/assets/js/90.f548bd4c.js"><link rel="prefetch" href="/assets/js/91.041415b0.js"><link rel="prefetch" href="/assets/js/92.fa2b69d6.js"><link rel="prefetch" href="/assets/js/93.e2c77e1a.js"><link rel="prefetch" href="/assets/js/94.e48f3022.js"><link rel="prefetch" href="/assets/js/95.5672da69.js"><link rel="prefetch" href="/assets/js/96.013e9e2d.js"><link rel="prefetch" href="/assets/js/97.47454694.js"><link rel="prefetch" href="/assets/js/98.3f0d44d6.js"><link rel="prefetch" href="/assets/js/99.5dbf6765.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40853667.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>GuangJu'S NoteBook</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuangJu'S NoteBook</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/img/headimg.jpeg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    GuangJu
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>105</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>95</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>React</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Framework/React/react01.html" class="sidebar-link">React 起步</a></li><li><a href="/Framework/React/react02.html" class="sidebar-link">React jsx文件</a></li><li><a href="/Framework/React/react03.html" class="sidebar-link">React  class、函数组件</a></li><li><a href="/Framework/React/react04.html" class="sidebar-link">React 类组件 State</a></li><li><a href="/Framework/React/react05.html" class="sidebar-link">React 组件传值</a></li><li><a href="/Framework/React/react06.html" class="sidebar-link">React 条件渲染/循环渲染</a></li><li><a href="/Framework/React/react07.html" class="sidebar-link">React 受控组件与非受控组件</a></li><li><a href="/Framework/React/react08.html" class="sidebar-link">React class的生命周期</a></li><li><a href="/Framework/React/react09.html" class="sidebar-link">React createContext 上下文</a></li><li><a href="/Framework/React/react10.html" class="sidebar-link">React propTypes/高阶组件</a></li><li><a href="/Framework/React/react11.html" class="sidebar-link">React Hooks</a></li><li><a href="/Framework/React/react12.html" class="sidebar-link">React Router</a></li><li><a href="/Framework/React/react13.html" class="sidebar-link">React 使用Sass</a></li><li><a href="/Framework/React/react14.html" class="sidebar-link">React Redux</a></li><li><a href="/Framework/React/react&amp;vue.html" aria-current="page" class="active sidebar-link">React 和 Vue 对比总结</a></li><li><a href="/Framework/React/react.html" class="sidebar-link">React 优化</a></li><li><a href="/Framework/React/router_doc.html" class="sidebar-link">React Router翻译文档</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>React 和 Vue 对比总结</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">React 和 Vue 对比总结</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>GuangJu</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2019-03-15</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Framework/React/react&amp;vue.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>react</span><span class="tag-item" data-v-3b7f5bdf>vue</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p>react和vue都是做组件化的，整体的功能都类似，但是他们的设计思路是有很多不同的。使用react和vue，主要是理解他们的设计思路的不同。</p></div> <h2 id="整体对比"><a href="#整体对比" class="header-anchor">#</a> 整体对比</h2> <h3 id="相似点"><a href="#相似点" class="header-anchor">#</a> 相似点</h3> <ul><li><p>都支持组件化,</p></li> <li><p>都有虚拟DOM (Virtual DOM)，组件化开发的概念，通过props参数进行父子组件之间数据的传递，都实现了webComponent规范</p></li> <li><p>都是数据驱动视图</p></li></ul> <h3 id="不同点"><a href="#不同点" class="header-anchor">#</a> 不同点</h3> <ol><li><p>写法：</p> <ul><li><p>react使用jsx语法（如果要在JS里写HTML，就是创造一个一个的DOM对象，用JS来写，会非常的冗余并且不能一目了然的看清楚DOM的结构。所以就扩展成了JSX，直接用HTML的写法在js中写DOM）</p></li> <li><p>Vue使用模板系统而不是JSX，使其对现有应用的升级更加容易。这是因为模板用的就是普通的HTML，通过Vue来整合现有的系统是比较容易的，不需要整体重构。</p></li></ul></li> <li><p>数据更新：</p> <ul><li><p>Vue采取依赖追踪，默认是优化状态：按需更新；</p></li> <li><p>React在则有两种选择：</p> <ul><li><p>1）手动添加shouldComponentUpdate，来避免冗余的vdom，re-render的情况</p></li> <li><p>2）Components 尽可能都用 pureRenderMixin，然后采用 redux 结构 + Immutable.js（感受一波）</p></li></ul></li></ul> <p>react整体是函数式的思想，把组件设计成纯组件，状态和逻辑通过参数传入，所以在react中，是单向数据流，推崇结合immutable来实现数据不可变。react在setState之后会重新走渲染的流程，如果shouldComponentUpdate返回的是true，就继续渲染，如果返回了false，就不会重新渲染，PureComponent就是重写了shouldComponentUpdate，然后在里面作了props和state的浅层对比。</p> <p>而vue的思想是响应式的，也就是基于是数据可变的，通过对每一个属性建立Watcher来监听，当属性变化的时候，响应式的更新对应的虚拟dom，支持双向绑定。</p> <p>总之，react的性能优化需要手动去做，而vue的性能优化是自动的，但是vue的响应式机制也有问题，就是当state特别多的时候，Watcher也会很多，会导致卡顿，所以大型应用（状态特别多的）一般用react，更加可控。</p></li> <li><p>类式的组件写法，还是声明式的写法</p> <ul><li><p>react是类式的写法，api很少，</p></li> <li><p>vue是声明式的写法，通过传入各种options，api和参数都很多。所以react结合typescript更容易一起写，vue稍微复杂。</p></li></ul> <p>react可以通过高阶组件（Higher Order Components--HOC）来扩展，而vue需要通过mixins来扩展</p></li></ol> <h2 id="框架本质不同"><a href="#框架本质不同" class="header-anchor">#</a> 框架本质不同</h2> <ul><li><p>Vue本质是MVVM框架，由MVC发展而来；</p></li> <li><p>React是前端组件化框架，由后端组件化发展而来。</p></li></ul> <h2 id="vuex和redux的区别"><a href="#vuex和redux的区别" class="header-anchor">#</a> Vuex和Redux的区别</h2> <ul><li><p>从表面上来说，store注入和使用方式有一些区别。在Vuex中，$store被直接注入到了组件实例中，因此可以比较灵活的使用：使用dispatch、commit提交更新，通过mapState或者直接通过this.$store来读取数据。在Redux中，我们每一个组件都需要显示的用connect把需要的props和dispatch连接起来。另外，Vuex更加灵活一些，组件中既可以dispatch action，也可以commit updates，而Redux中只能进行dispatch，不能直接调用reducer进行修改。</p></li> <li><p>从实现原理上来说，最大的区别是两点：Redux使用的是不可变数据，而Vuex的数据是可变的，因此，Redux每次都是用新state替换旧state，而Vuex是直接修改。Redux在检测数据变化的时候，是通过diff的方式比较差异的，而Vuex其实和Vue的原理一样，是通过getter/setter来比较的，这两点的区别，也是因为React和Vue的设计理念不同。React更偏向于构建稳定大型的应用，非常的科班化。相比之下，Vue更偏向于简单迅速的解决问题，更灵活，不那么严格遵循条条框框。因此也会给人一种大型项目用React，小型项目用Vue的感觉。</p></li></ul> <h2 id="监听数据变化的实现原理不同"><a href="#监听数据变化的实现原理不同" class="header-anchor">#</a> 监听数据变化的实现原理不同</h2> <ul><li><p>Vue通过 getter/setter以及一些函数的劫持，能精确知道数据变化。</p></li> <li><p>React默认是通过比较引用的方式（diff）进行的，如果不优化可能导致大量不必要的VDOM的重新渲染。为什么React不精确监听数据变化呢？这是因为Vue和React设计理念上的区别，Vue使用的是可变数据，而React更强调数据的不可变，两者没有好坏之分，Vue更加简单，而React构建大型应用的时候更加鲁棒。</p></li></ul> <h2 id="组件通信的区别"><a href="#组件通信的区别" class="header-anchor">#</a> 组件通信的区别</h2> <ul><li><p>Vue中有三种方式可以实现组件通信：父组件通过props向子组件传递数据或者回调，虽然可以传递回调，但是我们一般只传数据；子组件通过事件向父组件发送消息；通过V2.2.0中新增的provide/inject来实现父组件向子组件注入数据，可以跨越多个层级。</p></li> <li><p>React中也有对应的三种方式：父组件通过props可以向子组件传递数据或者回调；可以通过 context 进行跨层级的通信，这其实和 provide/inject 起到的作用差不多。React 本身并不支持自定义事件，而Vue中子组件向父组件传递消息有两种方式：事件和回调函数，但Vue更倾向于使用事件。在React中我们都是使用回调函数的，这可能是他们二者最大的区别。</p></li></ul> <h2 id="构建工具"><a href="#构建工具" class="header-anchor">#</a> 构建工具</h2> <ul><li><p>React和Vue都有自己的构建工具，你可以使用它快速搭建开发环境。React可以使用Create React App (CRA)，而Vue对应的则是vue-cli。两个工具都能让你得到一个根据最佳实践设置的项目模板。</p></li> <li><p>由于CRA有很多选项，使用起来会稍微麻烦一点。这个工具会逼迫你使用Webpack和Babel。而vue-cli则有模板列表可选，能按需创造不同模板，使用起来更灵活一点。</p></li></ul> <h2 id="生命周期"><a href="#生命周期" class="header-anchor">#</a> 生命周期</h2> <p>生命周期对比表</p> <table><thead><tr><th style="text-align:center;">vue</th> <th style="text-align:center;">react</th></tr></thead> <tbody><tr><td style="text-align:center;">beforeCreate</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">created</td> <td style="text-align:center;"></td></tr> <tr><td style="text-align:center;">beforeMount</td> <td style="text-align:center;">componentDidMount</td></tr> <tr><td style="text-align:center;">mounted</td> <td style="text-align:center;">componentDidMount</td></tr> <tr><td style="text-align:center;">beforeUpdate</td> <td style="text-align:center;">componentWillReceiveProps, shouldComponentUpdate, componentWillUpdate</td></tr> <tr><td style="text-align:center;">updated</td> <td style="text-align:center;">componentDidUpdate</td></tr> <tr><td style="text-align:center;">beforeDestroy</td> <td style="text-align:center;">componentWillUnmount</td></tr> <tr><td style="text-align:center;">destroyed</td> <td style="text-align:center;">componentDidUnmount</td></tr></tbody></table> <p>vue对比react相关的生命周期，可以看出从beforeMount开始和react基本一致，只是react在视图更新前做了更细粒度的控制，componentWillReceiveProps, shouldComponentUpdate,  componentWillUpdate 这三个方法都接收nextProps和nextState两个参数，允许你在这三个方法中针对新数据决定是否渲染，以及如何渲染的控制。</p> <p>vue中beforeCreate和created这两个方法是react中没有的，这也是vue与react本质不同的体现，vue中有data、computed、method等等属性，这两个方法就是把这些属性注入到模板中的过程，注入后才参与后面模板的编译，生成dom，挂载等等操作。在beforeCreate中访问实例的data这些属性是undefined，所以在这里可以用于设置data的初始值，created中这些属性就已经被绑在实例上可以访问了。</p> <h2 id="vue实例属性方法"><a href="#vue实例属性方法" class="header-anchor">#</a> vue实例属性方法</h2> <ul><li><p>data
+vue中的data属性类似于react中的state，属于组件的私有数据，不同在于react中state是通过setState()方法进行更新的，而vue中data除了通过直接赋值改变其值，还可以通过v-model这个语法糖进行数据双向绑定，这个主要用于表单组件。</p></li> <li><p>props
+vue中props和react中的props类似，不同的是vue中的props来源于父组件，而react中props除来自于父组件还来自于redux中的数据。</p></li> <li><p>computed
+computed属性是vue的一大特色，它依赖于props、data生成新的计算数据，会根据props和data的改变而改变。computed中的数据默认只有getter属性，也可设置setter属性。在react中想对props或者state再加工一般都是另外再初始化一个state数据或者在render函数中创建临时变量，特别是一些在显示前的排序过滤方法都在render里调用。另外computed中还包括vuex中mapState和mapGetters的数据。</p></li> <li><p>method
+method是放各种方法的地方，包括vuex中mapActions的方法，而react中，react-redux将action取出来作为props传入组件中。</p></li> <li><p>watch
+watch一般用于观测数据变化不会触发视图更新的数据，或者是需要根据数据变化做其他操作情景，比如子组件数据更新通知父组件。watch的回调函数接收（val, oldVal），这个和react中更新前的几个生命周期的用法有点类似，props或者state改变就会触发。而且watch的数据有deep配置项，可以监测对象内部的变化。</p></li></ul> <h2 id="vue组件"><a href="#vue组件" class="header-anchor">#</a> vue组件</h2> <p>vue和react都是组件化、模块化思想的产出，vue推荐单文件组件，就是把template、js、css写在一个文件里，这个优点就是修改代码不用切换文件，每个组件的样式、模板、事件都在一个文件里，react虽然是JSX，但是样式控制在单独的文件里（现在也有了CSS in JavaScript的样式框架）。不过vue这样有个缺点就是组件稍微大一点，单个文件代码行数就暴多，轻而易举就上300行。</p> <h3 id="组件通信"><a href="#组件通信" class="header-anchor">#</a> 组件通信</h3> <p>vue的组件通信有三种方法，下面依次讲讲：</p> <ul><li>props &amp; $on &amp; $emit
+这种方法主要用于父子组件间的通信，父组件通过绑定动态props将父数据传给子组件，子组件通过$emit事件触发父组件上通过$on绑定的自定义事件，并将子组件的数据抛上去。</li> <li>eventBus &amp; $emit
+eventBus常用于同代组件间的通信，它是实际上是另外定义的一个全局vue实例，在此实例上订阅t和触发事件可以在全局有效。使用方法和前一种一样，但是这个在组件中订阅时要记得卸载前取消事件订阅，因为vue不会在生命周期结束时自动取消eventBus事件的订阅，会造成全局污染。而且这种方法适用于单个组件，如果是list那种循环组件，不宜在每个list item上进行全局事件订阅。
+按理说在有了vuex不需要eventBus，但在此个人认为，vuex是管理数据状态的，是一个全局数据存储的地方，如果不是全局都要用的，不跨路由，就不需要存起来，应该考虑用eventBus，不能说有了vuex，props什么的都不用了，什么数据都丢到vuex，要用的都从里面取，随着项目复杂度的增加，数据管理就会变得杂乱，我们应该像后端设计数据库一样来设计前端的数据管理。</li> <li>vuex
+上一种方法中也说到了vuex，vuex其实能cover上面两种方法的情景，但是就像上面说的，不能说vuex好用就滥用，就像好吃的东西吃多也会撑死。根据上一个react-redux产品项目中redux的应用，我们就是将全局需要的数据才存到redux，供跨路由数据存取，不需要的都通过props，state来解决，就是这样，随着产品迭代，新功能增加，store中的数据都变得难以维护，再加上最开始数据结构设计过于依赖业务逻辑，导致一些扩展困难。所以前端数据结构设计也很重要。
+vuex还是应该用于存储全局数据，跨路由，跨多个组件，比如祖父子组件间的通信，业务之间跨越比较大的组件间的通信。</li></ul> <h2 id="vuex"><a href="#vuex" class="header-anchor">#</a> vuex</h2> <p>vuex是专为vue设计的数据管理，就vuex和redux的异同我做了些研究，他们本质区别是redux设定数据是immutable的， 而vuex设定数据是mutation的，redux中每次数据更新都会生成新的store tree，而vuex就是在store tree上直接修改。下面针对vuex各个部分和redux对比总结下。</p> <ul><li><p>state
+state就是store中的数据，是唯一数据源的存在，这个概念和redux中store是一样的，通过辅助方法mapState，可将多个state解构在组件computed方法中，这个和react-redux中的mapStateToProps类似。</p></li> <li><p>getter
+getter是对state的再加工，类似于vuex中的计算属性，他和react项目中reselect插件实现一样的功能，vuex将其集成了。通过mapGetters可以将这些getter映射到局部计算属性，react中则是直接import。</p></li> <li><p>mutation
+mutation类似redux中reducer的作用，数据的改变就发生在这个部分，这个部分也是vuex和redux本质区别的地方，vuex在mutation中改变store上的相关数据的值，而redux在这里是根据actiontype和playload返回的是一个新的数据。另外mutation中是同步函数，异步函数不能在此执行。</p></li> <li><p>action
+action和redux中的action类似，可以执行异步操作，可以分发action，和redux中的middleware类似。</p></li> <li><p>modules
+modules将store分割成不同模块，每个模块拥有自己的state、mutation、action、getter，这个思想和redux中reducer拆分类似，不过reducer合并的时候生成了新的store tree。</p></li></ul> <h3 id="vuex的store中的状态是响应式的-和vue遵循一样规则"><a href="#vuex的store中的状态是响应式的-和vue遵循一样规则" class="header-anchor">#</a> vuex的store中的状态是响应式的，和vue遵循一样规则</h3> <ul><li><p>初始化所有的所需属性
+当需要再对象上添加新属性是，应该用Vue.set或者用对象展开运算符
+这个规则是我觉得vue挺尴尬的地方，他无法监测到对象内部的变化，你直接赋值改变对象他是无感的，无法响应，经常出现数据已经更改，视图没有更新。对于非引用类型的数据他让你直接赋值更改，然后响应，也就是mutation，而对于引用类型的数据，你必须给以新对象替换老对象它才能响应，个人觉得这是一种不一致性的表现。虽然它给出了Vue.set的解决方法，但是在2.0中，Vue.set不接受keyPath的方式动态增加属性，很多时候存在超过二级嵌套属性时，就贼尴尬了。在社区里找了半天，找到了vue-deepset插件，然后就完美解决vue和vuex中动态增加属性的问题。</p></li> <li><p>Personal opinion
+由于我刚入前端时就学习的是react框架，没什么历史负担，所以对于react具有侵略性的JSX是很快就接受了，它将JS和HTML部分糅合在一起了，这对于老前端来说是很难接受的，但是前端组件化、模块化是大势所趋，vue的出现解决了这个问题，记得vue的英文版是这么描述自己的</p></li></ul> <p>Vue (pronounced /vju?/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.</p> <p>progresive渐进式增强，我理解的另一个意思，就是一步一步将以前的项目向组件化、模块化演变提供了循序渐进的途径。</p></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/16/2020, 1:29:57 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是guangju欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-ribbon"></canvas><div><div class="sponsor-container" data-v-a142c76a><div class="sponsor-love position-absolute transition-3ms" data-v-a142c76a>
+    Sponsor
+  </div> <a href="https://github.com/yokefellow/vuepress-plugin-sponsor" target="_blank" title="Github" class="sponsor-github position-absolute transition-3ms" data-v-a142c76a></a> <ul class="sponsor-payment-options transition-3ms" data-v-a142c76a><li id="alipay-option" class="transition-3ms" data-v-a142c76a></li> <li id="wechat-option" class="transition-3ms" data-v-a142c76a></li> <li id="qq-option" class="transition-3ms" data-v-a142c76a></li> <li id="paypal-option" class="transition-3ms" data-v-a142c76a></li></ul> <div class="sponsor-qrcode-container position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a><div class="sponsor-qrcode-info" style="background-image:url();pointer-events:none;display:none;" data-v-a142c76a data-v-a142c76a></div></div> <div class="sponsor-message position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a>
+      主人忘记设置啦
+    </div></div></div></div></div>
+    <script src="/assets/js/app.acb9cd7c.js" defer></script><script src="/assets/js/3.76545830.js" defer></script><script src="/assets/js/1.12bc23b5.js" defer></script><script src="/assets/js/26.35c782b8.js" defer></script>
+  </body>
+</html>

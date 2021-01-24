@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eslint 的使用和禁用 | GuangJu&#39;S NoteBook</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/linktolink.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.40853667.css" as="style"><link rel="preload" href="/assets/js/app.acb9cd7c.js" as="script"><link rel="preload" href="/assets/js/3.76545830.js" as="script"><link rel="preload" href="/assets/js/1.12bc23b5.js" as="script"><link rel="preload" href="/assets/js/159.af79d3a4.js" as="script"><link rel="prefetch" href="/assets/js/10.71f49e58.js"><link rel="prefetch" href="/assets/js/100.568eec07.js"><link rel="prefetch" href="/assets/js/101.f75de0ff.js"><link rel="prefetch" href="/assets/js/102.a36c9b9c.js"><link rel="prefetch" href="/assets/js/103.8cbc8a8f.js"><link rel="prefetch" href="/assets/js/104.5247c211.js"><link rel="prefetch" href="/assets/js/105.4753fb1b.js"><link rel="prefetch" href="/assets/js/106.b0e86d49.js"><link rel="prefetch" href="/assets/js/107.e4579500.js"><link rel="prefetch" href="/assets/js/108.36c92521.js"><link rel="prefetch" href="/assets/js/109.d2382581.js"><link rel="prefetch" href="/assets/js/11.0eec3018.js"><link rel="prefetch" href="/assets/js/110.1d56a1c7.js"><link rel="prefetch" href="/assets/js/111.4ec8a304.js"><link rel="prefetch" href="/assets/js/112.286126e5.js"><link rel="prefetch" href="/assets/js/113.88c89f56.js"><link rel="prefetch" href="/assets/js/114.d6f0c25d.js"><link rel="prefetch" href="/assets/js/115.a07730f9.js"><link rel="prefetch" href="/assets/js/116.de8b0c73.js"><link rel="prefetch" href="/assets/js/117.9be44c87.js"><link rel="prefetch" href="/assets/js/118.e281b966.js"><link rel="prefetch" href="/assets/js/119.c03cb8ce.js"><link rel="prefetch" href="/assets/js/12.d202d19c.js"><link rel="prefetch" href="/assets/js/120.c54a2e80.js"><link rel="prefetch" href="/assets/js/121.7a12f2a8.js"><link rel="prefetch" href="/assets/js/122.0b678b92.js"><link rel="prefetch" href="/assets/js/123.26c00b81.js"><link rel="prefetch" href="/assets/js/124.eeaa333d.js"><link rel="prefetch" href="/assets/js/125.99d26dc0.js"><link rel="prefetch" href="/assets/js/126.13fca0a9.js"><link rel="prefetch" href="/assets/js/127.8054b73d.js"><link rel="prefetch" href="/assets/js/128.7accebb8.js"><link rel="prefetch" href="/assets/js/129.08811073.js"><link rel="prefetch" href="/assets/js/13.484e01df.js"><link rel="prefetch" href="/assets/js/130.c9b6e8dc.js"><link rel="prefetch" href="/assets/js/131.f8f1d0cf.js"><link rel="prefetch" href="/assets/js/132.7864f0c5.js"><link rel="prefetch" href="/assets/js/133.aeafdd91.js"><link rel="prefetch" href="/assets/js/134.8a218b55.js"><link rel="prefetch" href="/assets/js/135.befc3a22.js"><link rel="prefetch" href="/assets/js/136.ec32cf2d.js"><link rel="prefetch" href="/assets/js/137.7ac0f702.js"><link rel="prefetch" href="/assets/js/138.72bfc9c2.js"><link rel="prefetch" href="/assets/js/139.5a863a01.js"><link rel="prefetch" href="/assets/js/14.290cb36e.js"><link rel="prefetch" href="/assets/js/140.f27f28e2.js"><link rel="prefetch" href="/assets/js/141.7565a60f.js"><link rel="prefetch" href="/assets/js/142.2e64f412.js"><link rel="prefetch" href="/assets/js/143.48ee7de5.js"><link rel="prefetch" href="/assets/js/144.bf60a6cf.js"><link rel="prefetch" href="/assets/js/145.b29e0081.js"><link rel="prefetch" href="/assets/js/146.aebadec9.js"><link rel="prefetch" href="/assets/js/147.ef81f716.js"><link rel="prefetch" href="/assets/js/148.37b1436d.js"><link rel="prefetch" href="/assets/js/149.137674ab.js"><link rel="prefetch" href="/assets/js/15.378109e6.js"><link rel="prefetch" href="/assets/js/150.6ac29410.js"><link rel="prefetch" href="/assets/js/151.1d8978fe.js"><link rel="prefetch" href="/assets/js/152.4dd1caa4.js"><link rel="prefetch" href="/assets/js/153.f71dc98b.js"><link rel="prefetch" href="/assets/js/154.9c3e6922.js"><link rel="prefetch" href="/assets/js/155.566eb07c.js"><link rel="prefetch" href="/assets/js/156.5773ac6d.js"><link rel="prefetch" href="/assets/js/157.733c74ae.js"><link rel="prefetch" href="/assets/js/158.368fe751.js"><link rel="prefetch" href="/assets/js/16.22008244.js"><link rel="prefetch" href="/assets/js/160.5c7e9b39.js"><link rel="prefetch" href="/assets/js/161.2bc6524a.js"><link rel="prefetch" href="/assets/js/162.c323c71d.js"><link rel="prefetch" href="/assets/js/163.7352c855.js"><link rel="prefetch" href="/assets/js/164.adba7776.js"><link rel="prefetch" href="/assets/js/165.e4a9f519.js"><link rel="prefetch" href="/assets/js/166.97a8e6db.js"><link rel="prefetch" href="/assets/js/167.34910ef7.js"><link rel="prefetch" href="/assets/js/168.d6752a23.js"><link rel="prefetch" href="/assets/js/169.0575e7f3.js"><link rel="prefetch" href="/assets/js/17.c411d0bf.js"><link rel="prefetch" href="/assets/js/170.2b8d6ca6.js"><link rel="prefetch" href="/assets/js/171.77c53d3c.js"><link rel="prefetch" href="/assets/js/172.94f34ed8.js"><link rel="prefetch" href="/assets/js/173.78ebf17d.js"><link rel="prefetch" href="/assets/js/174.0a6b1bb2.js"><link rel="prefetch" href="/assets/js/175.50f7de76.js"><link rel="prefetch" href="/assets/js/176.ce8cdbd8.js"><link rel="prefetch" href="/assets/js/177.7b4ebf0a.js"><link rel="prefetch" href="/assets/js/178.6a863fac.js"><link rel="prefetch" href="/assets/js/179.df719de9.js"><link rel="prefetch" href="/assets/js/18.49ce348e.js"><link rel="prefetch" href="/assets/js/180.232da06a.js"><link rel="prefetch" href="/assets/js/181.e8a15aa9.js"><link rel="prefetch" href="/assets/js/19.457b97c4.js"><link rel="prefetch" href="/assets/js/20.3a3cbf21.js"><link rel="prefetch" href="/assets/js/21.8e717d10.js"><link rel="prefetch" href="/assets/js/22.49e03d3a.js"><link rel="prefetch" href="/assets/js/23.735c371c.js"><link rel="prefetch" href="/assets/js/24.b5fb66f0.js"><link rel="prefetch" href="/assets/js/25.d6bd260b.js"><link rel="prefetch" href="/assets/js/26.35c782b8.js"><link rel="prefetch" href="/assets/js/27.becc04e9.js"><link rel="prefetch" href="/assets/js/28.b52d36a0.js"><link rel="prefetch" href="/assets/js/29.b32db475.js"><link rel="prefetch" href="/assets/js/30.98df5e0f.js"><link rel="prefetch" href="/assets/js/31.3f39a854.js"><link rel="prefetch" href="/assets/js/32.cfb80a2b.js"><link rel="prefetch" href="/assets/js/33.04afbac5.js"><link rel="prefetch" href="/assets/js/34.9bcb7959.js"><link rel="prefetch" href="/assets/js/35.e711be96.js"><link rel="prefetch" href="/assets/js/36.51d1f0b7.js"><link rel="prefetch" href="/assets/js/37.ed4ff1f2.js"><link rel="prefetch" href="/assets/js/38.5d00a06b.js"><link rel="prefetch" href="/assets/js/39.933e3c46.js"><link rel="prefetch" href="/assets/js/4.26c14f14.js"><link rel="prefetch" href="/assets/js/40.fe55c56b.js"><link rel="prefetch" href="/assets/js/41.612f7aae.js"><link rel="prefetch" href="/assets/js/42.591dbd1e.js"><link rel="prefetch" href="/assets/js/43.75a4b33e.js"><link rel="prefetch" href="/assets/js/44.1215c578.js"><link rel="prefetch" href="/assets/js/45.25e5278d.js"><link rel="prefetch" href="/assets/js/46.3772feb9.js"><link rel="prefetch" href="/assets/js/47.7c8fc33b.js"><link rel="prefetch" href="/assets/js/48.2865ac61.js"><link rel="prefetch" href="/assets/js/49.ec4f4be9.js"><link rel="prefetch" href="/assets/js/5.4ff0b5b6.js"><link rel="prefetch" href="/assets/js/50.5b401113.js"><link rel="prefetch" href="/assets/js/51.b563e194.js"><link rel="prefetch" href="/assets/js/52.bb519887.js"><link rel="prefetch" href="/assets/js/53.72717d06.js"><link rel="prefetch" href="/assets/js/54.ac236639.js"><link rel="prefetch" href="/assets/js/55.bff3c62e.js"><link rel="prefetch" href="/assets/js/56.0b4ef2b1.js"><link rel="prefetch" href="/assets/js/57.1806e275.js"><link rel="prefetch" href="/assets/js/58.3dfda0a9.js"><link rel="prefetch" href="/assets/js/59.adab08ca.js"><link rel="prefetch" href="/assets/js/6.4ed370e9.js"><link rel="prefetch" href="/assets/js/60.171754d7.js"><link rel="prefetch" href="/assets/js/61.450814c1.js"><link rel="prefetch" href="/assets/js/62.c070075c.js"><link rel="prefetch" href="/assets/js/63.334277a8.js"><link rel="prefetch" href="/assets/js/64.b5c9918e.js"><link rel="prefetch" href="/assets/js/65.e110a4f6.js"><link rel="prefetch" href="/assets/js/66.ec34322a.js"><link rel="prefetch" href="/assets/js/67.b478b5e8.js"><link rel="prefetch" href="/assets/js/68.a27bada6.js"><link rel="prefetch" href="/assets/js/69.58a6969b.js"><link rel="prefetch" href="/assets/js/7.1445cdc6.js"><link rel="prefetch" href="/assets/js/70.177fb6e3.js"><link rel="prefetch" href="/assets/js/71.48c15abd.js"><link rel="prefetch" href="/assets/js/72.280a39be.js"><link rel="prefetch" href="/assets/js/73.a53e010c.js"><link rel="prefetch" href="/assets/js/74.572ef5ba.js"><link rel="prefetch" href="/assets/js/75.d676daec.js"><link rel="prefetch" href="/assets/js/76.0f273ed9.js"><link rel="prefetch" href="/assets/js/77.31051b23.js"><link rel="prefetch" href="/assets/js/78.4066d9cc.js"><link rel="prefetch" href="/assets/js/79.0d3aa56a.js"><link rel="prefetch" href="/assets/js/8.bc731f91.js"><link rel="prefetch" href="/assets/js/80.d79f7210.js"><link rel="prefetch" href="/assets/js/81.3418c513.js"><link rel="prefetch" href="/assets/js/82.d18b7d2a.js"><link rel="prefetch" href="/assets/js/83.9c3f5393.js"><link rel="prefetch" href="/assets/js/84.7ac0b669.js"><link rel="prefetch" href="/assets/js/85.c51949d6.js"><link rel="prefetch" href="/assets/js/86.b316ed4e.js"><link rel="prefetch" href="/assets/js/87.388e4e03.js"><link rel="prefetch" href="/assets/js/88.90bda8ff.js"><link rel="prefetch" href="/assets/js/89.3c4ac2ea.js"><link rel="prefetch" href="/assets/js/9.00729029.js"><link rel="prefetch" href="/assets/js/90.f548bd4c.js"><link rel="prefetch" href="/assets/js/91.041415b0.js"><link rel="prefetch" href="/assets/js/92.fa2b69d6.js"><link rel="prefetch" href="/assets/js/93.e2c77e1a.js"><link rel="prefetch" href="/assets/js/94.e48f3022.js"><link rel="prefetch" href="/assets/js/95.5672da69.js"><link rel="prefetch" href="/assets/js/96.013e9e2d.js"><link rel="prefetch" href="/assets/js/97.47454694.js"><link rel="prefetch" href="/assets/js/98.3f0d44d6.js"><link rel="prefetch" href="/assets/js/99.5dbf6765.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40853667.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>GuangJu'S NoteBook</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuangJu'S NoteBook</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/img/headimg.jpeg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    GuangJu
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>105</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>95</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" aria-current="page" class="nav-link router-link-exact-active router-link-active"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav> <ul class="sidebar-links"><li><a href="/Tools/git.html" class="sidebar-link">git</a></li><li><a href="/Tools/yarn.html" class="sidebar-link">yarn</a></li><li><a href="/Tools/npm.html" class="sidebar-link">npm</a></li><li><a href="/Tools/cmd.html" class="sidebar-link">cmd</a></li><li><a href="/Tools/nrm.html" class="sidebar-link">nrm</a></li><li><a href="/Tools/nvm.html" class="sidebar-link">nvm</a></li><li><a href="/Tools/pm2.html" class="sidebar-link">pm2</a></li><li><a href="/Tools/serve.html" class="sidebar-link">serve</a></li><li><a href="/Tools/markdown.html" class="sidebar-link">MarkDown</a></li><li><a href="/Tools/terminal.html" class="sidebar-link">Terminal</a></li><li><a href="/Tools/Trojan.html" class="sidebar-link">Trojan</a></li><li><a href="/Tools/vite.html" class="sidebar-link">Vite 使用</a></li><li><a href="/Tools/eslint.html" aria-current="page" class="active sidebar-link">Eslint 的使用和禁用</a></li><li><a href="/Tools/vuepress.html" class="sidebar-link">Vuepress</a></li><li><a href="/Tools/upgrade.html" class="sidebar-link">项目中依赖包的升级</a></li><li><a href="/Tools/regex.html" class="sidebar-link">regex正则</a></li><li><a href="/Tools/typecho.html" class="sidebar-link">Typecho + Centos7 + 宝塔</a></li><li><a href="/Tools/vscode.html" class="sidebar-link">VScode 中的设置文档</a></li><li><a href="/Tools/wsl.html" class="sidebar-link">Windows 子系统 WSL</a></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Eslint 的使用和禁用</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">Eslint 的使用和禁用</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>GuangJu</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2019-05-19</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Tools/eslint.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>Eslint</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="禁用eslint"><a href="#禁用eslint" class="header-anchor">#</a> 禁用Eslint</h2> <h3 id="在-vue-中"><a href="#在-vue-中" class="header-anchor">#</a> 在 Vue 中</h3> <ul><li>在 vue-cli 3.0</li></ul> <blockquote><ol><li>项目中如果有<code>vue.config.js</code>文件</li></ol> <p>不想使用 <code>ESLint</code> 校验（不推荐取消），只要找到 <code>vue.config.js</code>文件, 修改<code>lintOnSave 为false</code>，如果没有就添加<code>lintOnSave: false</code>。</p> <ol start="2"><li>项目中如果有<code>Eslintrc.js</code>文件</li></ol> <p>添加<code>&quot;linebreak-style&quot;:&quot;off&quot;</code>.</p> <div class="language-js extra-class"><pre class="language-js"><code>rules<span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token string">&quot;linebreak-style&quot;</span><span class="token operator">:</span><span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>以上方法选一个即可。</p></blockquote> <ul><li>在 <code>vue-cli 4.0</code>.</li></ul> <p>在<code>vue.config.js</code>中添加<code>lintOnSave: false</code>.</p> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+        lintOnSave<span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//或者 警告错误一起设置</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    devServer<span class="token operator">:</span> <span class="token punctuation">{</span>
+        overlay<span class="token operator">:</span> <span class="token punctuation">{</span>
+            warnings<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+            errors<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    lintOnSave<span class="token operator">:</span> <span class="token boolean">false</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="在-react-中"><a href="#在-react-中" class="header-anchor">#</a> 在 React 中</h3> <ul><li>第一种 修改<code>package.json</code> (在新版<code>react</code>中尝试无效)</li></ul> <p>在项目中的<code>package.json</code>文件中的<code>&quot;eslintConfig&quot;</code>里添加</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token string">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;no-undef&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;no-restricted-globals&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;no-unused-vars&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span>
+        <span class="token punctuation">}</span>
+</code></pre></div><p>添加后是这样的</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token string">&quot;eslintConfig&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token string">&quot;react-app&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token string">&quot;no-undef&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;no-restricted-globals&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span><span class="token punctuation">,</span>
+            <span class="token string">&quot;no-unused-vars&quot;</span><span class="token operator">:</span> <span class="token string">&quot;off&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// eslint规则：</span>
+
+    <span class="token comment">// &quot;off&quot; 或者 0：关闭规则。</span>
+
+    <span class="token comment">// &quot;warn&quot; 或者 1：打开规则，并且作为一个警告（不影响exit code）。</span>
+
+    <span class="token comment">// &quot;error&quot; 或者 2：打开规则，并且作为一个错误（exit code将会是1）。</span>
+</code></pre></div><p>第二种(亲测有效)</p> <p>运行</p> <div class="language-js extra-class"><pre class="language-js"><code>yarn eject  或  npm eject
+</code></pre></div><p>在生成的<code>config</code>文件夹的<code>Webpack.config.js</code>中找到以下代码，并注释掉即可</p> <div class="language-js extra-class"><pre class="language-js"><code>            <span class="token punctuation">{</span>
+                    test<span class="token operator">:</span> <span class="token regex">/\.(js|mjs|jsx|ts|tsx)$/</span><span class="token punctuation">,</span>
+                    enforce<span class="token operator">:</span> <span class="token string">'pre'</span><span class="token punctuation">,</span>
+                    use<span class="token operator">:</span> <span class="token punctuation">[</span>
+                        <span class="token punctuation">{</span>
+                            options<span class="token operator">:</span> <span class="token punctuation">{</span>
+                                cache<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+                                formatter<span class="token operator">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'react-dev-utils/eslintFormatter'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                eslintPath<span class="token operator">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'eslint'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                                resolvePluginsRelativeTo<span class="token operator">:</span> __dirname<span class="token punctuation">,</span>
+
+                            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                            loader<span class="token operator">:</span> require<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span><span class="token string">'eslint-loader'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+                    include<span class="token operator">:</span> paths<span class="token punctuation">.</span>appSrc<span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">注</p> <p>以上所有方法，在设置完成以后，都要重新启动项目才会生效！！</p></div> <h2 id="使用eslint"><a href="#使用eslint" class="header-anchor">#</a> 使用Eslint</h2> <h3 id="在-react-中-2"><a href="#在-react-中-2" class="header-anchor">#</a> 在 React 中</h3> <ul><li>安装Eslint</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>npm install eslint <span class="token operator">--</span>save<span class="token operator">-</span>dev
+</code></pre></div><ul><li>创建<code>ESlint</code>配置文件<code>.eslintrc.js</code>：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>eslint <span class="token operator">--</span>init
+</code></pre></div><ul><li>安装 <code>eslint-plugin-react</code> 等相关依赖：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>npm install babel<span class="token operator">-</span>eslint eslint<span class="token operator">-</span>plugin<span class="token operator">-</span>react eslint<span class="token operator">-</span>plugin<span class="token operator">-</span><span class="token keyword">import</span>  <span class="token operator">--</span>save<span class="token operator">-</span>dev
+</code></pre></div><ul><li>创建 <code>.eslintrc.js</code>文件</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// .eslintrc.js文件介绍</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token string">&quot;env&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;browser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;commonjs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;es6&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;parser&quot;</span><span class="token operator">:</span> <span class="token string">&quot;babel-eslint&quot;</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;extends&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;eslint:recommended&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;plugin:react/recommended&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;parserOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;ecmaVersion&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token comment">// 开启实验属性</span>
+    <span class="token string">&quot;ecmaFeatures&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;experimentalObjectRestSpread&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token comment">// 修饰器</span>
+      <span class="token string">&quot;experimentalDecorators&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;sourceType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;plugins&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">&quot;react&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;globals&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;__DEV__&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;__dirname&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;window&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;define&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;history&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;location&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;wxjs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;$&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;WeixinJSBridge&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;wx&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;process&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;qq&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">&quot;settings&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;react&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;16.2.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">/**
+   * &quot;off&quot; 或 0 - 关闭规则
+   * &quot;warn&quot; 或 1 - 开启规则，使用警告级别的错误：warn (不会导致程序退出),
+   * &quot;error&quot; 或 2 - 开启规则，使用错误级别的错误：error (当被触发的时候，程序会退出)
+   */</span>
+  <span class="token string">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;no-cond-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;no-console&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;allow&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;log&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;warn&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;info&quot;</span><span class="token punctuation">]</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止 function 定义中出现重名参数</span>
+    <span class="token string">&quot;no-dupe-args&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止对象字面量中出现重复的 key</span>
+    <span class="token string">&quot;no-dupe-keys&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止重复的 case 标签</span>
+    <span class="token string">&quot;no-duplicate-case&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止空语句块</span>
+    <span class="token string">&quot;no-empty&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止对 catch 子句的参数重新赋值</span>
+    <span class="token string">&quot;no-ex-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止不必要的布尔转换</span>
+    <span class="token string">&quot;no-extra-boolean-cast&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止不必要的括号 //(a * b) + c;//报错</span>
+    <span class="token string">&quot;no-extra-parens&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+
+    <span class="token comment">//强制所有控制语句使用一致的括号风格</span>
+    <span class="token string">&quot;curly&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止 catch 子句的参数与外层作用域中的变量同名</span>
+    <span class="token string">&quot;no-catch-shadow&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许标签与变量同名</span>
+    <span class="token string">&quot;no-label-var&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁用特定的全局变量</span>
+    <span class="token string">&quot;no-restricted-globals&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止 var 声明 与外层作用域的变量同名</span>
+    <span class="token string">&quot;no-shadow&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止覆盖受限制的标识符</span>
+    <span class="token string">&quot;no-shadow-restricted-names&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止将变量初始化为 undefined</span>
+    <span class="token string">&quot;no-undef-init&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止将 undefined 作为标识符</span>
+    <span class="token string">&quot;no-undefined&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许在变量定义之前使用它们</span>
+    <span class="token string">&quot;no-use-before-define&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">//////////////</span>
+    <span class="token comment">// 风格指南 //</span>
+    <span class="token comment">//////////////</span>
+    <span class="token comment">// 指定数组的元素之间要以空格隔开(, 后面)， never参数：[ 之前和 ] 之后不能带空格，always参数：[ 之前和 ] 之后必须带空格</span>
+    <span class="token string">&quot;array-bracket-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止或强制在单行代码块中使用空格(禁用)</span>
+    <span class="token string">&quot;block-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">//强制使用一致的缩进 第二个参数为 &quot;tab&quot; 时，会使用tab，</span>
+    <span class="token comment">// if while function 后面的{必须与if在同一行，java风格。</span>
+    <span class="token string">&quot;brace-style&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;1tbs&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;allowSingleLine&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 控制逗号前后的空格</span>
+    <span class="token string">&quot;comma-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;before&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;after&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 控制逗号在行尾出现还是在行首出现 (默认行尾)</span>
+    <span class="token comment">// http://eslint.org/docs/rules/comma-style</span>
+    <span class="token string">&quot;comma-style&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;last&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">//&quot;SwitchCase&quot; (默认：0) 强制 switch 语句中的 case 子句的缩进水平</span>
+    <span class="token comment">// 以方括号取对象属性时，[ 后面和 ] 前面是否需要空格, 可选参数 never, always</span>
+    <span class="token string">&quot;computed-property-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 用于指统一在回调函数中指向this的变量名，箭头函数中的this已经可以指向外层调用者，应该没卵用了</span>
+    <span class="token comment">// e.g [0,&quot;self&quot;] 指定只能 var that = this. self不能指向其他任何值，this也不能赋值给self以外的其他值</span>
+    <span class="token string">&quot;consistent-this&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;self&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;that&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;_self&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;_that&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;me&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;_this&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用命名的 function 表达式</span>
+    <span class="token string">&quot;func-names&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 文件末尾强制换行</span>
+    <span class="token string">&quot;eol-last&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;indent&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token number">2</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">//要求或禁止在函数标识符和其调用之间有空格</span>
+    <span class="token string">&quot;func-call-spacing&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在对象字面量的属性中键和值之间使用一致的间距</span>
+    <span class="token string">&quot;key-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;beforeColon&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;afterColon&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求在注释周围有空行 ( 要求在块级注释之前有一空行)</span>
+    <span class="token string">&quot;lines-around-comment&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;beforeBlockComment&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;func-style&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制回调函数最大嵌套深度 5层</span>
+    <span class="token string">&quot;max-nested-callbacks&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止使用指定的标识符</span>
+    <span class="token string">&quot;id-blacklist&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制标识符的最新和最大长度</span>
+    <span class="token string">&quot;id-length&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求标识符匹配一个指定的正则表达式</span>
+    <span class="token string">&quot;id-match&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在 JSX 属性中一致地使用双引号或单引号</span>
+    <span class="token string">&quot;jsx-quotes&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在关键字前后使用一致的空格 (前后腰需要)</span>
+    <span class="token string">&quot;keyword-spacing&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制一行的最大长度</span>
+    <span class="token string">&quot;max-len&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">&quot;ignoreUrls&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制最大行数</span>
+    <span class="token string">&quot;max-lines&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制 function 定义中最多允许的参数数量</span>
+    <span class="token string">&quot;max-params&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制 function 块最多允许的的语句数量</span>
+    <span class="token string">&quot;max-statements&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">200</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制每一行中所允许的最大语句数量</span>
+    <span class="token string">&quot;max-statements-per-line&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求构造函数首字母大写 （要求调用 new 操作符时有首字母大小的函数，允许调用首字母大写的函数时没有 new 操作符。）</span>
+    <span class="token string">&quot;new-cap&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;newIsCap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;capIsNew&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求调用无参构造函数时有圆括号</span>
+    <span class="token string">&quot;new-parens&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止 var 声明语句后有一行空行</span>
+    <span class="token string">&quot;newline-after-var&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止使用 Array 构造函数</span>
+    <span class="token string">&quot;no-array-constructor&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁用按位运算符</span>
+    <span class="token string">&quot;no-bitwise&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求 return 语句之前有一空行</span>
+    <span class="token string">&quot;newline-before-return&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求方法链中每个调用都有一个换行符</span>
+    <span class="token string">&quot;newline-per-chained-call&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁用 continue 语句</span>
+    <span class="token string">&quot;no-continue&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止在代码行后使用内联注释</span>
+    <span class="token string">&quot;no-inline-comments&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止 if 作为唯一的语句出现在 else 语句中</span>
+    <span class="token string">&quot;no-lonely-if&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止混合使用不同的操作符</span>
+    <span class="token string">&quot;no-mixed-operators&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">//禁止空格和 tab 的混合缩进</span>
+    <span class="token string">&quot;no-mixed-spaces-and-tabs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;error&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;smart-tabs&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许多个空行</span>
+    <span class="token string">&quot;no-multiple-empty-lines&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;max&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许否定的表达式</span>
+    <span class="token string">&quot;no-negated-condition&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许使用嵌套的三元表达式</span>
+    <span class="token string">&quot;no-nested-ternary&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止使用 Object 的构造函数</span>
+    <span class="token string">&quot;no-new-object&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止使用一元操作符 ++ 和 --</span>
+    <span class="token string">&quot;no-plusplus&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止使用特定的语法</span>
+    <span class="token string">&quot;no-restricted-syntax&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止 function 标识符和括号之间出现空格</span>
+    <span class="token string">&quot;no-spaced-func&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许使用三元操作符</span>
+    <span class="token string">&quot;no-ternary&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁用行尾空格</span>
+    <span class="token string">&quot;no-trailing-spaces&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止标识符中有悬空下划线_bar</span>
+    <span class="token string">&quot;no-underscore-dangle&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止可以在有更简单的可替代的表达式时使用三元操作符</span>
+    <span class="token string">&quot;no-unneeded-ternary&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止属性前有空白</span>
+    <span class="token string">&quot;no-whitespace-before-property&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止在 var 声明周围换行</span>
+    <span class="token string">&quot;one-var-declaration-per-line&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止在可能的情况下要求使用简化的赋值操作符</span>
+    <span class="token string">&quot;operator-assignment&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制操作符使用一致的换行符</span>
+    <span class="token string">&quot;operator-linebreak&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;after&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;overrides&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string">&quot;?&quot;</span><span class="token operator">:</span> <span class="token string">&quot;before&quot;</span><span class="token punctuation">,</span>
+        <span class="token string">&quot;:&quot;</span><span class="token operator">:</span> <span class="token string">&quot;before&quot;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止块内填充</span>
+    <span class="token string">&quot;padded-blocks&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求对象字面量属性名称用引号括起来</span>
+    <span class="token string">&quot;quote-props&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制使用一致的反勾号、双引号或单引号</span>
+    <span class="token string">&quot;quotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;single&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;avoid-escape&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求使用 JSDoc 注释</span>
+    <span class="token string">&quot;require-jsdoc&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止使用分号而不是 ASI（这个才是控制行尾部分号的，）</span>
+    <span class="token comment">// &quot;semi&quot;: [2, &quot;always&quot;],</span>
+    <span class="token comment">// 强制分号之前和之后使用一致的空格</span>
+    <span class="token string">&quot;semi-spacing&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求同一个声明块中的变量按顺序排列</span>
+    <span class="token string">&quot;sort-vars&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在块之前使用一致的空格</span>
+    <span class="token string">&quot;space-before-blocks&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在 function的左括号之前使用一致的空格</span>
+    <span class="token string">&quot;space-before-function-paren&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在圆括号内使用一致的空格</span>
+    <span class="token string">&quot;space-in-parens&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求操作符周围有空格</span>
+    <span class="token string">&quot;space-infix-ops&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在一元操作符前后使用一致的空格</span>
+    <span class="token string">&quot;space-unary-ops&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;words&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;nonwords&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在注释中 // 或 /* 使用一致的空格</span>
+    <span class="token string">&quot;spaced-comment&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;always&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;markers&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;global&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;globals&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;eslint&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;eslint-disable&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;*package&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;!&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止 Unicode BOM</span>
+    <span class="token string">&quot;unicode-bom&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求正则表达式被括号括起来</span>
+    <span class="token string">&quot;wrap-regex&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">//禁止词法声明 (let、const、function 和 class) 出现在 case或default 子句中</span>
+    <span class="token string">&quot;no-case-declarations&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;warn&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token comment">//////////////</span>
+    <span class="token comment">// ES6.相关 //</span>
+    <span class="token comment">//////////////</span>
+    <span class="token comment">// 要求箭头函数体使用大括号</span>
+    <span class="token string">&quot;arrow-body-style&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求箭头函数的参数使用圆括号</span>
+    <span class="token string">&quot;arrow-parens&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;arrow-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;before&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;after&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制 generator 函数中 * 号周围使用一致的空格</span>
+    <span class="token string">&quot;generator-star-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;before&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;after&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止修改类声明的变量</span>
+    <span class="token string">&quot;no-class-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 不允许箭头功能，在那里他们可以混淆的比较</span>
+    <span class="token string">&quot;no-confusing-arrow&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止修改 const 声明的变量</span>
+    <span class="token string">&quot;no-const-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止类成员中出现重复的名称</span>
+    <span class="token string">&quot;no-dupe-class-members&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 每个模块只能使用一个import</span>
+    <span class="token string">&quot;no-duplicate-imports&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止 Symbolnew 操作符和 new 一起使用</span>
+    <span class="token string">&quot;no-new-symbol&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 允许指定模块加载时的进口</span>
+    <span class="token string">&quot;no-restricted-imports&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止在构造函数中，在调用 super() 之前使用 this 或 super</span>
+    <span class="token string">&quot;no-this-before-super&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止不必要的计算性能键对象的文字</span>
+    <span class="token string">&quot;no-useless-computed-key&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求使用 let 或 const 而不是 var</span>
+    <span class="token string">&quot;no-var&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止对象字面量中方法和属性使用简写语法</span>
+    <span class="token string">&quot;object-shorthand&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求使用箭头函数作为回调</span>
+    <span class="token string">&quot;prefer-arrow-callback&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求使用 const 声明那些声明后不再被修改的变量</span>
+    <span class="token string">&quot;prefer-const&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求在合适的地方使用 Reflect 方法</span>
+    <span class="token string">&quot;prefer-reflect&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求使用扩展运算符而非 .apply()</span>
+    <span class="token string">&quot;prefer-spread&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求使用模板字面量而非字符串连接</span>
+    <span class="token string">&quot;prefer-template&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// Suggest using the rest parameters instead of arguments</span>
+    <span class="token string">&quot;prefer-rest-params&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求generator 函数内有 yield</span>
+    <span class="token string">&quot;require-yield&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 要求或禁止模板字符串中的嵌入表达式周围空格的使用</span>
+    <span class="token string">&quot;template-curly-spacing&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token comment">// 强制在 yield* 表达式中 * 周围使用空格</span>
+    <span class="token string">&quot;yield-star-spacing&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+
+
+
+    <span class="token comment">// 强制使用一致的换行风格</span>
+    <span class="token string">&quot;linebreak-style&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;unix&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">//在JSX中强制布尔属性符号</span>
+    <span class="token string">&quot;react/jsx-boolean-value&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//在JSX中验证右括号位置</span>
+    <span class="token comment">// &quot;react/jsx-closing-bracket-location&quot;: 1,</span>
+    <span class="token comment">//在JSX属性和表达式中加强或禁止大括号内的空格。</span>
+    <span class="token string">&quot;react/jsx-curly-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;when&quot;</span><span class="token operator">:</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;children&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">//在数组或迭代器中验证JSX具有key属性</span>
+    <span class="token string">&quot;react/jsx-key&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">// 限制JSX中单行上的props的最大数量</span>
+    <span class="token string">&quot;react/jsx-max-props-per-line&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;maximum&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止在JSX中重复的props</span>
+    <span class="token string">&quot;react/jsx-no-duplicate-props&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//  //防止使用未包装的JSX字符串</span>
+    <span class="token comment">// &quot;react/jsx-no-literals&quot;: 0,</span>
+    <span class="token comment">//在JSX中禁止未声明的变量</span>
+    <span class="token string">&quot;react/jsx-no-undef&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//为用户定义的JSX组件强制使用PascalCase</span>
+    <span class="token string">&quot;react/jsx-pascal-case&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止反应被错误地标记为未使用</span>
+    <span class="token string">&quot;react/jsx-uses-react&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止在JSX中使用的变量被错误地标记为未使用</span>
+    <span class="token string">&quot;react/jsx-uses-vars&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止在componentDidMount中使用setState</span>
+    <span class="token string">&quot;react/no-did-mount-set-state&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止在componentDidUpdate中使用setState</span>
+    <span class="token string">&quot;react/no-did-update-set-state&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止使用未知的DOM属性</span>
+    <span class="token string">&quot;react/no-unknown-property&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//为React组件强制执行ES5或ES6类</span>
+    <span class="token string">&quot;react/prefer-es6-class&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止在React组件定义中丢失props验证</span>
+    <span class="token comment">// &quot;react/prop-types&quot;: 1,</span>
+    <span class="token comment">//使用JSX时防止丢失React</span>
+    <span class="token string">&quot;react/react-in-jsx-scope&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//防止没有children的组件的额外结束标签</span>
+    <span class="token string">&quot;react/self-closing-comp&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token comment">//禁止不必要的bool转换</span>
+    <span class="token comment">// &quot;no-extra-boolean-cast&quot;: 0,</span>
+    <span class="token comment">//防止在数组中遍历中使用数组key做索引</span>
+    <span class="token comment">// &quot;react/no-array-index-key&quot;: 0,</span>
+    <span class="token comment">//不使用弃用的方法</span>
+    <span class="token string">&quot;react/no-deprecated&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token comment">//在JSX属性中强制或禁止等号周围的空格</span>
+    <span class="token string">&quot;react/jsx-equals-spacing&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;react/jsx-filename-extension&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+      <span class="token string">&quot;extensions&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;.js&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;.jsx&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 禁止未使用的变量</span>
+    <span class="token string">&quot;no-unused-vars&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>在<code>package.json</code>中增加如下脚本指令：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --ext .js --ext .jsx src&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>添加完成之后，就可以执行如下命令对指定的文件进行<code>eslint</code>管理：</p> <div class="language-js extra-class"><pre class="language-js"><code>npm run lint
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <!----></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是guangju欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-ribbon"></canvas><div><div class="sponsor-container" data-v-a142c76a><div class="sponsor-love position-absolute transition-3ms" data-v-a142c76a>
+    Sponsor
+  </div> <a href="https://github.com/yokefellow/vuepress-plugin-sponsor" target="_blank" title="Github" class="sponsor-github position-absolute transition-3ms" data-v-a142c76a></a> <ul class="sponsor-payment-options transition-3ms" data-v-a142c76a><li id="alipay-option" class="transition-3ms" data-v-a142c76a></li> <li id="wechat-option" class="transition-3ms" data-v-a142c76a></li> <li id="qq-option" class="transition-3ms" data-v-a142c76a></li> <li id="paypal-option" class="transition-3ms" data-v-a142c76a></li></ul> <div class="sponsor-qrcode-container position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a><div class="sponsor-qrcode-info" style="background-image:url();pointer-events:none;display:none;" data-v-a142c76a data-v-a142c76a></div></div> <div class="sponsor-message position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a>
+      主人忘记设置啦
+    </div></div></div></div></div>
+    <script src="/assets/js/app.acb9cd7c.js" defer></script><script src="/assets/js/3.76545830.js" defer></script><script src="/assets/js/1.12bc23b5.js" defer></script><script src="/assets/js/159.af79d3a4.js" defer></script>
+  </body>
+</html>

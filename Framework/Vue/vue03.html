@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue 指令 | GuangJu&#39;S NoteBook</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/linktolink.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.40853667.css" as="style"><link rel="preload" href="/assets/js/app.acb9cd7c.js" as="script"><link rel="preload" href="/assets/js/3.76545830.js" as="script"><link rel="preload" href="/assets/js/1.12bc23b5.js" as="script"><link rel="preload" href="/assets/js/48.2865ac61.js" as="script"><link rel="prefetch" href="/assets/js/10.71f49e58.js"><link rel="prefetch" href="/assets/js/100.568eec07.js"><link rel="prefetch" href="/assets/js/101.f75de0ff.js"><link rel="prefetch" href="/assets/js/102.a36c9b9c.js"><link rel="prefetch" href="/assets/js/103.8cbc8a8f.js"><link rel="prefetch" href="/assets/js/104.5247c211.js"><link rel="prefetch" href="/assets/js/105.4753fb1b.js"><link rel="prefetch" href="/assets/js/106.b0e86d49.js"><link rel="prefetch" href="/assets/js/107.e4579500.js"><link rel="prefetch" href="/assets/js/108.36c92521.js"><link rel="prefetch" href="/assets/js/109.d2382581.js"><link rel="prefetch" href="/assets/js/11.0eec3018.js"><link rel="prefetch" href="/assets/js/110.1d56a1c7.js"><link rel="prefetch" href="/assets/js/111.4ec8a304.js"><link rel="prefetch" href="/assets/js/112.286126e5.js"><link rel="prefetch" href="/assets/js/113.88c89f56.js"><link rel="prefetch" href="/assets/js/114.d6f0c25d.js"><link rel="prefetch" href="/assets/js/115.a07730f9.js"><link rel="prefetch" href="/assets/js/116.de8b0c73.js"><link rel="prefetch" href="/assets/js/117.9be44c87.js"><link rel="prefetch" href="/assets/js/118.e281b966.js"><link rel="prefetch" href="/assets/js/119.c03cb8ce.js"><link rel="prefetch" href="/assets/js/12.d202d19c.js"><link rel="prefetch" href="/assets/js/120.c54a2e80.js"><link rel="prefetch" href="/assets/js/121.7a12f2a8.js"><link rel="prefetch" href="/assets/js/122.0b678b92.js"><link rel="prefetch" href="/assets/js/123.26c00b81.js"><link rel="prefetch" href="/assets/js/124.eeaa333d.js"><link rel="prefetch" href="/assets/js/125.99d26dc0.js"><link rel="prefetch" href="/assets/js/126.13fca0a9.js"><link rel="prefetch" href="/assets/js/127.8054b73d.js"><link rel="prefetch" href="/assets/js/128.7accebb8.js"><link rel="prefetch" href="/assets/js/129.08811073.js"><link rel="prefetch" href="/assets/js/13.484e01df.js"><link rel="prefetch" href="/assets/js/130.c9b6e8dc.js"><link rel="prefetch" href="/assets/js/131.f8f1d0cf.js"><link rel="prefetch" href="/assets/js/132.7864f0c5.js"><link rel="prefetch" href="/assets/js/133.aeafdd91.js"><link rel="prefetch" href="/assets/js/134.8a218b55.js"><link rel="prefetch" href="/assets/js/135.befc3a22.js"><link rel="prefetch" href="/assets/js/136.ec32cf2d.js"><link rel="prefetch" href="/assets/js/137.7ac0f702.js"><link rel="prefetch" href="/assets/js/138.72bfc9c2.js"><link rel="prefetch" href="/assets/js/139.5a863a01.js"><link rel="prefetch" href="/assets/js/14.290cb36e.js"><link rel="prefetch" href="/assets/js/140.f27f28e2.js"><link rel="prefetch" href="/assets/js/141.7565a60f.js"><link rel="prefetch" href="/assets/js/142.2e64f412.js"><link rel="prefetch" href="/assets/js/143.48ee7de5.js"><link rel="prefetch" href="/assets/js/144.bf60a6cf.js"><link rel="prefetch" href="/assets/js/145.b29e0081.js"><link rel="prefetch" href="/assets/js/146.aebadec9.js"><link rel="prefetch" href="/assets/js/147.ef81f716.js"><link rel="prefetch" href="/assets/js/148.37b1436d.js"><link rel="prefetch" href="/assets/js/149.137674ab.js"><link rel="prefetch" href="/assets/js/15.378109e6.js"><link rel="prefetch" href="/assets/js/150.6ac29410.js"><link rel="prefetch" href="/assets/js/151.1d8978fe.js"><link rel="prefetch" href="/assets/js/152.4dd1caa4.js"><link rel="prefetch" href="/assets/js/153.f71dc98b.js"><link rel="prefetch" href="/assets/js/154.9c3e6922.js"><link rel="prefetch" href="/assets/js/155.566eb07c.js"><link rel="prefetch" href="/assets/js/156.5773ac6d.js"><link rel="prefetch" href="/assets/js/157.733c74ae.js"><link rel="prefetch" href="/assets/js/158.368fe751.js"><link rel="prefetch" href="/assets/js/159.af79d3a4.js"><link rel="prefetch" href="/assets/js/16.22008244.js"><link rel="prefetch" href="/assets/js/160.5c7e9b39.js"><link rel="prefetch" href="/assets/js/161.2bc6524a.js"><link rel="prefetch" href="/assets/js/162.c323c71d.js"><link rel="prefetch" href="/assets/js/163.7352c855.js"><link rel="prefetch" href="/assets/js/164.adba7776.js"><link rel="prefetch" href="/assets/js/165.e4a9f519.js"><link rel="prefetch" href="/assets/js/166.97a8e6db.js"><link rel="prefetch" href="/assets/js/167.34910ef7.js"><link rel="prefetch" href="/assets/js/168.d6752a23.js"><link rel="prefetch" href="/assets/js/169.0575e7f3.js"><link rel="prefetch" href="/assets/js/17.c411d0bf.js"><link rel="prefetch" href="/assets/js/170.2b8d6ca6.js"><link rel="prefetch" href="/assets/js/171.77c53d3c.js"><link rel="prefetch" href="/assets/js/172.94f34ed8.js"><link rel="prefetch" href="/assets/js/173.78ebf17d.js"><link rel="prefetch" href="/assets/js/174.0a6b1bb2.js"><link rel="prefetch" href="/assets/js/175.50f7de76.js"><link rel="prefetch" href="/assets/js/176.ce8cdbd8.js"><link rel="prefetch" href="/assets/js/177.7b4ebf0a.js"><link rel="prefetch" href="/assets/js/178.6a863fac.js"><link rel="prefetch" href="/assets/js/179.df719de9.js"><link rel="prefetch" href="/assets/js/18.49ce348e.js"><link rel="prefetch" href="/assets/js/180.232da06a.js"><link rel="prefetch" href="/assets/js/181.e8a15aa9.js"><link rel="prefetch" href="/assets/js/19.457b97c4.js"><link rel="prefetch" href="/assets/js/20.3a3cbf21.js"><link rel="prefetch" href="/assets/js/21.8e717d10.js"><link rel="prefetch" href="/assets/js/22.49e03d3a.js"><link rel="prefetch" href="/assets/js/23.735c371c.js"><link rel="prefetch" href="/assets/js/24.b5fb66f0.js"><link rel="prefetch" href="/assets/js/25.d6bd260b.js"><link rel="prefetch" href="/assets/js/26.35c782b8.js"><link rel="prefetch" href="/assets/js/27.becc04e9.js"><link rel="prefetch" href="/assets/js/28.b52d36a0.js"><link rel="prefetch" href="/assets/js/29.b32db475.js"><link rel="prefetch" href="/assets/js/30.98df5e0f.js"><link rel="prefetch" href="/assets/js/31.3f39a854.js"><link rel="prefetch" href="/assets/js/32.cfb80a2b.js"><link rel="prefetch" href="/assets/js/33.04afbac5.js"><link rel="prefetch" href="/assets/js/34.9bcb7959.js"><link rel="prefetch" href="/assets/js/35.e711be96.js"><link rel="prefetch" href="/assets/js/36.51d1f0b7.js"><link rel="prefetch" href="/assets/js/37.ed4ff1f2.js"><link rel="prefetch" href="/assets/js/38.5d00a06b.js"><link rel="prefetch" href="/assets/js/39.933e3c46.js"><link rel="prefetch" href="/assets/js/4.26c14f14.js"><link rel="prefetch" href="/assets/js/40.fe55c56b.js"><link rel="prefetch" href="/assets/js/41.612f7aae.js"><link rel="prefetch" href="/assets/js/42.591dbd1e.js"><link rel="prefetch" href="/assets/js/43.75a4b33e.js"><link rel="prefetch" href="/assets/js/44.1215c578.js"><link rel="prefetch" href="/assets/js/45.25e5278d.js"><link rel="prefetch" href="/assets/js/46.3772feb9.js"><link rel="prefetch" href="/assets/js/47.7c8fc33b.js"><link rel="prefetch" href="/assets/js/49.ec4f4be9.js"><link rel="prefetch" href="/assets/js/5.4ff0b5b6.js"><link rel="prefetch" href="/assets/js/50.5b401113.js"><link rel="prefetch" href="/assets/js/51.b563e194.js"><link rel="prefetch" href="/assets/js/52.bb519887.js"><link rel="prefetch" href="/assets/js/53.72717d06.js"><link rel="prefetch" href="/assets/js/54.ac236639.js"><link rel="prefetch" href="/assets/js/55.bff3c62e.js"><link rel="prefetch" href="/assets/js/56.0b4ef2b1.js"><link rel="prefetch" href="/assets/js/57.1806e275.js"><link rel="prefetch" href="/assets/js/58.3dfda0a9.js"><link rel="prefetch" href="/assets/js/59.adab08ca.js"><link rel="prefetch" href="/assets/js/6.4ed370e9.js"><link rel="prefetch" href="/assets/js/60.171754d7.js"><link rel="prefetch" href="/assets/js/61.450814c1.js"><link rel="prefetch" href="/assets/js/62.c070075c.js"><link rel="prefetch" href="/assets/js/63.334277a8.js"><link rel="prefetch" href="/assets/js/64.b5c9918e.js"><link rel="prefetch" href="/assets/js/65.e110a4f6.js"><link rel="prefetch" href="/assets/js/66.ec34322a.js"><link rel="prefetch" href="/assets/js/67.b478b5e8.js"><link rel="prefetch" href="/assets/js/68.a27bada6.js"><link rel="prefetch" href="/assets/js/69.58a6969b.js"><link rel="prefetch" href="/assets/js/7.1445cdc6.js"><link rel="prefetch" href="/assets/js/70.177fb6e3.js"><link rel="prefetch" href="/assets/js/71.48c15abd.js"><link rel="prefetch" href="/assets/js/72.280a39be.js"><link rel="prefetch" href="/assets/js/73.a53e010c.js"><link rel="prefetch" href="/assets/js/74.572ef5ba.js"><link rel="prefetch" href="/assets/js/75.d676daec.js"><link rel="prefetch" href="/assets/js/76.0f273ed9.js"><link rel="prefetch" href="/assets/js/77.31051b23.js"><link rel="prefetch" href="/assets/js/78.4066d9cc.js"><link rel="prefetch" href="/assets/js/79.0d3aa56a.js"><link rel="prefetch" href="/assets/js/8.bc731f91.js"><link rel="prefetch" href="/assets/js/80.d79f7210.js"><link rel="prefetch" href="/assets/js/81.3418c513.js"><link rel="prefetch" href="/assets/js/82.d18b7d2a.js"><link rel="prefetch" href="/assets/js/83.9c3f5393.js"><link rel="prefetch" href="/assets/js/84.7ac0b669.js"><link rel="prefetch" href="/assets/js/85.c51949d6.js"><link rel="prefetch" href="/assets/js/86.b316ed4e.js"><link rel="prefetch" href="/assets/js/87.388e4e03.js"><link rel="prefetch" href="/assets/js/88.90bda8ff.js"><link rel="prefetch" href="/assets/js/89.3c4ac2ea.js"><link rel="prefetch" href="/assets/js/9.00729029.js"><link rel="prefetch" href="/assets/js/90.f548bd4c.js"><link rel="prefetch" href="/assets/js/91.041415b0.js"><link rel="prefetch" href="/assets/js/92.fa2b69d6.js"><link rel="prefetch" href="/assets/js/93.e2c77e1a.js"><link rel="prefetch" href="/assets/js/94.e48f3022.js"><link rel="prefetch" href="/assets/js/95.5672da69.js"><link rel="prefetch" href="/assets/js/96.013e9e2d.js"><link rel="prefetch" href="/assets/js/97.47454694.js"><link rel="prefetch" href="/assets/js/98.3f0d44d6.js"><link rel="prefetch" href="/assets/js/99.5dbf6765.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40853667.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>GuangJu'S NoteBook</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuangJu'S NoteBook</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/img/headimg.jpeg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    GuangJu
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>105</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>95</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Vue</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Framework/Vue/vue3-1.html" class="sidebar-link">Vue3 的使用(暂定)</a></li><li><a href="/Framework/Vue/vue01.html" class="sidebar-link">Vue 介绍和使用</a></li><li><a href="/Framework/Vue/vue02.html" class="sidebar-link">Vue &amp; vue 以及基础语法</a></li><li><a href="/Framework/Vue/vue03.html" aria-current="page" class="active sidebar-link">Vue 指令</a></li><li><a href="/Framework/Vue/vue04.html" class="sidebar-link">Vue 组件通信</a></li><li><a href="/Framework/Vue/vue05.html" class="sidebar-link">Vue 生命周期</a></li><li><a href="/Framework/Vue/vue06.html" class="sidebar-link">Vue 路由模式</a></li><li><a href="/Framework/Vue/vue07.html" class="sidebar-link">Vue 路由生命周期</a></li><li><a href="/Framework/Vue/vue08.html" class="sidebar-link">Vue 路由传参</a></li><li><a href="/Framework/Vue/vue09.html" class="sidebar-link">Vue 动态路由</a></li><li><a href="/Framework/Vue/vue10.html" class="sidebar-link">Vue 编程式的导航</a></li><li><a href="/Framework/Vue/vue11.html" class="sidebar-link">Vue 使用Echarts</a></li><li><a href="/Framework/Vue/vue12.html" class="sidebar-link">Vue 打包部署</a></li><li><a href="/Framework/Vue/vue13.html" class="sidebar-link">Vue 常用功能实现</a></li><li><a href="/Framework/Vue/vuers-1.html" class="sidebar-link">Vue 基础（总结复习）</a></li><li><a href="/Framework/Vue/vuers-2.html" class="sidebar-link">Vue 路由（总结复习）</a></li><li><a href="/Framework/Vue/vuers-3.html" class="sidebar-link">Vue vuex（总结复习）</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>Vue 指令</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">Vue 指令</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>GuangJu</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2018-12-01</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Framework/Vue/vue03.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>vue</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><div class="custom-block tip"><p class="custom-block-title">什么是指令</p> <p>vue里都是以 <code>v-</code> 开头的，也可称为自定义属性，是属性，在标签行内</p></div> <p>截至目前共 14 个官方指令</p> <h2 id="_1、v-text"><a href="#_1、v-text" class="header-anchor">#</a> 1、v-text</h2> <p><font size="15" color="#0099ff">v-text</font></p> <ul><li><p>预期：<code>string</code></p></li> <li><p>详细：</p></li></ul> <p>更新元素的 <code>textContent</code>。如果要更新部分的 <code>textContent</code>，需要使用  <code>{ { Mustache } }</code> 插值。</p> <ul><li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>text<span class="token operator">=</span><span class="token string">&quot;value&quot;</span>
+</code></pre></div><p>更新元素的文本，&quot;value&quot;为属性值也是变量，要在data中声明，作用类似{{}}</p> <ul><li>示例</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-text</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>msg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 和下面的一样 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>{{msg}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>作用：给DOM元素添加字符，只解析字符串</li></ul> <h2 id="_2、v-html"><a href="#_2、v-html" class="header-anchor">#</a> 2、v-html</h2> <p><font size="15" color="#0099ff">v-html</font></p> <ul><li><p>预期：<code>string</code></p></li> <li><p>详细：</p></li></ul> <p>更新元素的 <code>innerHTML</code> 。注意：内容按普通 <code>HTML</code> 插入 - 不会作为 Vue 模板进行编译。如果试图使用 <code>v-html</code> 组合模板，可以重新考虑是否通过使用组件来替代。</p> <div class="custom-block danger"><p class="custom-block-title">警告</p> <ul><li><p>在网站上动态渲染任意 <code>HTML</code> 是非常危险的，因为容易导致 <code>XSS</code> 攻击。只在可信内容上使用 <code>v-html</code>，永不用在用户提交的内容上。</p></li> <li><p>在单文件组件里，<code>scoped</code> 的样式不会应用在 <code>v-html</code> 内部，因为那部分 <code>HTML</code> 没有被 <code>Vue</code> 的模板编译器处理。如果你希望针对 <code>v-html</code> 的内容设置带作用域的 <code>CSS</code>，你可以替换为 <code>CSS Modules</code> 或用一个额外的全局 <code>&lt;style&gt;</code> 元素手动设置类似 <code>BEM</code> 的作用域策略。</p></li></ul></div> <ul><li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>html <span class="token operator">=</span> <span class="token string">&quot;name&quot;</span>
+</code></pre></div><p><code>name</code> 为属性值也是变量，可以自由命名 <code>name</code> ，要在 <code>data</code> 中声明，更新元素的 <code>innerHTML</code>，作用类似<code>{{}}</code></p> <ul><li>作用：
+解析<code>DOM</code>元素（标签）和文本</li></ul> <div class="custom-block tip"><p class="custom-block-title">v-html与v-text的区别</p> <p>类似<code>innerHTML</code> &amp; <code>innerTEXT</code></p> <p><code>v-html</code>可以解析标签元素，<code>v-text</code>不能解析元素，会把元素当作文本。</p></div> <h2 id="_3、v-show"><a href="#_3、v-show" class="header-anchor">#</a> 3、v-show</h2> <p><font size="15" color="#0099ff">v-show</font></p> <ul><li><p>预期：<code>any</code></p></li> <li><p>语法：</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>show<span class="token operator">=</span><span class="token string">&quot;ture/false/表达式&quot;</span> <span class="token comment">//布尔值</span>
+</code></pre></div><ul><li>用法：
+根据表达式的真假值控制元素的显示和隐藏,切换元素的 <code>display CSS property</code>。</li></ul> <p>当 <code>v-show</code> 的值为<code>false</code>会给元素添加一个 <code>display：none</code> 的属性（控制的<code>CSS</code>样式显示和隐藏）</p> <p>当条件变化时该指令触发过渡效果。</p> <h2 id="_4、v-if"><a href="#_4、v-if" class="header-anchor">#</a> 4、v-if</h2> <p><font size="15" color="#0099ff">v-if</font></p> <ul><li><p>预期：<code>any</code></p></li> <li><p>语法：</p></li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span><span class="token keyword">if</span><span class="token operator">=</span><span class="token string">&quot;ture/false/表达式&quot;</span> <span class="token comment">//布尔值</span>
+</code></pre></div><ul><li>用法：</li></ul> <p>根据表达式的值的 <code>truthiness</code> 来有条件地渲染元素。在切换时元素及它的数据绑定 / 组件被销毁并重建。如果元素是 <code>&lt;template&gt;</code> ，将提出它的内容作为条件块。</p> <ul><li>作用：根据表达式的真假值来控制是否显示
+v-if的值为<code>false</code>时，<code>DOM</code>元素不存在（控制<code>DOM</code>元素的创建和移除）</li></ul> <div class="custom-block tip"><p class="custom-block-title">v-show与v-if的区别</p> <p>v-show控制的是<code>CSS</code>的<code>display</code>属性，<code>v-if</code>控制的是元素的添加与删除（<code>DOM</code>）</p> <ul><li>频繁切换使用谁？
+<code>v-if</code>频繁操作<code>DOM</code>，太消耗性能所以多使用<code>v-show</code>就删除一次用<code>v-if</code></li></ul></div> <h2 id="_5、v-else"><a href="#_5、v-else" class="header-anchor">#</a> 5、v-else</h2> <p><font size="15" color="#0099ff">v-else</font></p> <ul><li>不需要表达式</li> <li>限制：前一兄弟元素必须有 <code>v-if</code> 或 <code>v-else-if</code>。</li> <li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span><span class="token keyword">else</span> 没有值
+</code></pre></div><ul><li>用法：
+为 <code>v-if</code> 或者 <code>v-else-if</code>添加<code>else</code>块，<code>v-else</code>必须跟在<code>v-if</code>|<code>v-else-if</code>后面使用，不能单独使用</li></ul> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p><code>v-else</code> 没有值和表达式，是最后一种判断情况，</p></div> <ul><li>示例</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>Math.random() &gt; 0.5<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  Now you see me
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>
+  Now you don't
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="_6、v-else-if"><a href="#_6、v-else-if" class="header-anchor">#</a> 6、v-else-if</h2> <p><font size="15" color="#0099ff">v-else-if</font></p> <ul><li><p>类型：<code>any</code></p></li> <li><p>限制：前一兄弟元素必须有 <code>v-if</code> 或 <code>v-else-if</code></p></li></ul> <p>不能单独使用，必须和<code>v-if</code>|<code>v-else-if</code>后面</p> <ul><li>用法：</li></ul> <p>表示 <code>v-if</code> 的<code>else if</code> 块。可以链式调用</p> <ul><li>示例</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>type === <span class="token punctuation">'</span>A<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  A
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>type === <span class="token punctuation">'</span>B<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  B
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else-if</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>type === <span class="token punctuation">'</span>C<span class="token punctuation">'</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  C
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-else</span><span class="token punctuation">&gt;</span></span>
+  Not A/B/C
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="_7、v-for"><a href="#_7、v-for" class="header-anchor">#</a> 7、v-for</h2> <p><font size="15" color="#0099ff">v-for</font></p> <ul><li>预期：<code>Array | Object | number | string | Iterable (2.6 新增)</code></li> <li>用法
+基于源数据多次渲染元素或模板块。此指令之值，必须使用特定语法 <code>alias in expression</code>，为当前遍历的元素提供别名：</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item in items<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  {{ item.text }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><ul><li>语法：
+变量 <code>in</code> 对象       写法：（变量1,变量2）in 对象</li></ul> <p>语法1：(数组)</p> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">&quot;（item,index) in arr&quot;</span>
+</code></pre></div><p><code>item</code> 数组每一项 ，<code>index</code> 索引下标
+语法2：(对象)</p> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span><span class="token keyword">for</span><span class="token operator">=</span><span class="token string">&quot;（val,key,index) in obj&quot;</span>
+</code></pre></div><p><code>val</code> 对象的值，<code>key</code>对象的键 ，<code>index</code> 索引下标</p> <ul><li>作用：列表渲染指令，主要用来遍历数组或者对象并渲染(数组两个值，对象三个值)</li></ul> <div class="custom-block warning"><p class="custom-block-title">注意</p> <ul><li>需要几个谁，就往谁身上写<code>v-for</code></li> <li>遍历出来的元素个数由对象的长度决定。</li> <li>当有一个变量时，变量是每一项，</li></ul> <p>当有两个变量时，第一个变量还是每一项，第二个变量是索引。</p> <p>当和 <code>v-if</code> 一起使用时，<code>v-for</code> 的优先级比 <code>v-if</code> 更高，详见<a href="https://cn.vuejs.org/v2/guide/list.html#v-for-with-v-if" target="_blank" rel="noopener noreferrer">官方列表渲染教程<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <h2 id="_8、v-on"><a href="#_8、v-on" class="header-anchor">#</a> 8、v-on</h2> <p><font size="15" color="#0099ff">v-on</font></p> <ul><li>简写：<code>@</code></li> <li>预期：<code>Function | Inline Statement | Object</code></li> <li>参数：<code>event</code></li> <li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>on：click<span class="token operator">=</span><span class="token string">&quot;函数名&quot;</span>
+</code></pre></div><p><code>click</code>是事件名称（不加on）
+<code>v-on</code>:事件类型 = &quot;函数名&quot; ,事件类型不加on，</p> <ul><li>作用：用来绑定事件
+如： 绑定点击事件</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>on：click<span class="token operator">=</span><span class="token string">&quot;show&quot;</span>
+</code></pre></div><ul><li>传参数</li></ul> <blockquote><ul><li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>on：click<span class="token operator">=</span><span class="token string">&quot;函数名(param1，param2)&quot;</span>；
+<span class="token comment">//param1，param2是参数</span>
+</code></pre></div><p>-简写成：</p> <div class="language-js extra-class"><pre class="language-js"><code>@click<span class="token operator">=</span><span class="token string">&quot;show()&quot;</span>
+</code></pre></div></blockquote> <ul><li>修饰符
+<ul><li><code>.stop</code>    - 调用 <code>event.stopPropagation()</code>。</li> <li><code>.prevent</code> - 调用 <code>event.preventDefault()</code>。</li> <li><code>.capture</code> - 添加事件侦听器时使用 capture 模式。</li> <li><code>.self</code>    - 只当事件是从侦听器绑定的元素本身触发时才触发回调。</li> <li><code>.{keyCode | keyAlias}</code> - 只当事件是从特定键触发时才触发回调。</li> <li><code>.native</code>  - 监听组件根元素的原生事件。</li> <li><code>.once</code>    - 只触发一次回调。</li> <li><code>.left</code>    - (2.2.0) 只当点击鼠标左键时触发。</li> <li><code>.right</code>   - (2.2.0) 只当点击鼠标右键时触发。</li> <li><code>.middle</code>  - (2.2.0) 只当点击鼠标中键时触发。</li> <li><code>.passive</code> - (2.3.0) 以 <code>{ passive: true }</code> 模式添加侦听器</li></ul></li> <li>语法：</li></ul> <blockquote><div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>on：click<span class="token punctuation">.</span>stop<span class="token operator">=</span><span class="token string">&quot;函数名&quot;</span>
+</code></pre></div><p>写在事件名称后面，用.表示</p></blockquote> <ul><li>修饰符分类</li></ul> <blockquote><ul><li>事件修饰符:</li></ul> <p><code>.stop</code>(取消冒泡 /阻止冒泡)</p> <p><code>.prevent</code>(取消默认事件 /阻止默认事件)</p> <p><code>.capture  .self  .once  .passive ...</code></p> <ul><li>按键/键盘修饰符：</li></ul> <p>键名：<code>enter esc ctrl shift</code></p> <p>键码(keycode)：<code>13 65</code></p> <p><code>.13 .65 .shift ...</code></p></blockquote> <ul><li>用法：</li></ul> <p>绑定事件监听器。事件类型由参数指定。表达式可以是一个方法的名字或一个内联语句，如果没有修饰符也可以省略。</p> <p>用在普通元素上时，只能监听原生 <code>DOM</code> 事件。用在自定义元素组件上时，也可以监听子组件触发的自定义事件。</p> <p>在监听原生 DOM 事件时，方法以事件为唯一的参数。如果使用内联语句，语句可以访问一个 <code>$event</code> property：<code>v-on:click=&quot;handle('ok', $event)&quot;</code>。</p> <p>从 <code>2.4.0</code> 开始，<code>v-on</code> 同样支持不带参数绑定一个事件/监听器键值对的对象。注意当使用对象语法时，是不支持任何修饰器的。</p> <ul><li>示例：</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 方法处理器 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token namespace">v-on:</span>click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 动态事件 (2.6.0+) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token namespace">v-on:</span>[event]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 内联语句 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token namespace">v-on:</span>click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThat(<span class="token punctuation">'</span>hello<span class="token punctuation">'</span>, $event)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 缩写 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 动态事件缩写 (2.6.0+) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@[event]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 停止冒泡 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click.stop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 阻止默认行为 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click.prevent</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 阻止默认行为，没有表达式 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>form</span> <span class="token attr-name">@submit.prevent</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>form</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!--  串联修饰符 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click.stop.prevent</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 键修饰符，键别名 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">@keyup.enter</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onEnter<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 键修饰符，键代码 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">@keyup.13</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onEnter<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 点击回调只会触发一次 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token namespace">v-on:</span>click.once</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>doThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 对象语法 (2.4.0+) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">v-on</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ mousedown: doThis, mouseup: doThat }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在子组件上监听自定义事件 (当子组件触发“my-event”时将调用事件处理器)：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">@my-event</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleThis<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 内联语句 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">@my-event</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>handleThis(123, $event)<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 组件中的原生事件 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">@click.native</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>onClick<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="_9、v-bind"><a href="#_9、v-bind" class="header-anchor">#</a> 9、v-bind</h2> <p><font size="15" color="#0099ff">v-bind</font></p> <ul><li>简写: <code>:</code></li></ul> <p><code>:属性名=值</code></p> <ul><li>预期：<code>any (with argument) | Object (without argument)</code></li> <li>参数：<code>attrOrProp (optional)</code></li> <li>修饰符：
+<ul><li><code>.prop</code> - 作为一个 <code>DOM property</code> 绑定而不是作为 <code>attribute</code> 绑定。(差别在哪里？)</li> <li><code>.camel</code> - (2.1.0+) 将 <code>kebab-case attribute</code> 名转换为 <code>camelCase</code>。(从 2.1.0 开始支持)</li> <li><code>.sync</code> (2.3.0+) 语法糖，会扩展成一个更新父组件绑定值的 <code>v-on</code> 侦听器。</li></ul></li> <li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>bind<span class="token operator">:</span>属性名<span class="token operator">=</span>值
+</code></pre></div><ul><li>用法：</li></ul> <p>动态地绑定一个或多个 <code>attribute</code>，或一个组件 prop 到表达式。</p> <p>在绑定 <code>class</code> 或 <code>style attribute</code> 时，支持其它类型的值，如数组或对象。可以通过下面的教程链接查看详情。</p> <p>在绑定 prop 时，prop 必须在子组件中声明。可以用修饰符指定不同的绑定类型。</p> <p>没有参数时，可以绑定到一个包含键值对的对象。注意此时 <code>class</code> 和 <code>style</code> 绑定不支持数组和对象。</p> <ul><li>作用：给元素或者组件动态绑定一个或者多个属性</li></ul> <blockquote><ul><li><p>关于this:
+this是当前vue实例，在组件中this指向当前组件</p></li> <li><p>动态绑定一个或多个属性</p></li></ul> <p>{}适合绑定style或者class</p> <div class="language-js extra-class"><pre class="language-js"><code> v<span class="token operator">-</span>bind<span class="token operator">:</span>style
+ v<span class="token operator">-</span>bind<span class="token operator">:</span>style<span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+    v<span class="token operator">-</span>bind<span class="token operator">:</span><span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;&quot;</span>
+</code></pre></div><ul><li>简写:
+<code>:class, :style, :src,...</code> :属性名</li></ul> <p><code>v-bind:class | :class</code></p> <ul><li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code> v<span class="token operator">-</span>bind：<span class="token keyword">class</span><span class="token operator">=</span><span class="token string">&quot;表达式或值&quot;</span>
+</code></pre></div><ul><li>绑定类型</li></ul> <div class="language-html extra-class"><pre class="language-html"><code>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>isClass<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span> //字符串
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ red: isRed }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!--
+绑定对象
+red为key key是类名 isRed是布尔值 这个布尔值决定是否绑定key
+--&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[classA, classB]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[classA, { classB: isB, classC: isC }]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+```js
+` v-bind:style`
+- 绑定样式
+
+值或者表达式的计算结果为boolean值，
+
+true 绑定了一个类名
+
+false 不绑定该类名
+
+已存在的类名和动态绑定的类名可以累加互不影响。
+</code></pre></div></blockquote> <ul><li>示例：</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 绑定一个 attribute --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name"><span class="token namespace">v-bind:</span>src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>imageSrc<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 动态 attribute 名 (2.6.0+) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name"><span class="token namespace">v-bind:</span>[key]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>value<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 缩写 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>imageSrc<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 动态 attribute 名缩写 (2.6.0+) --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">:[key]</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>value<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 内联字符串拼接 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">:src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">'</span>/path/to/images/<span class="token punctuation">'</span> + fileName<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- class 绑定 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ red: isRed }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[classA, classB]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>[classA, { classB: isB, classC: isC }]<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- style 绑定 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value"><span class="token punctuation">{</span> <span class="token property">fontSize</span><span class="token punctuation">:</span> size + <span class="token string">'px'</span> <span class="token punctuation">}</span></span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">:</span><span class="token style-attr language-css"><span class="token attr-name"><span class="token attr-name">style</span></span><span class="token punctuation">=&quot;</span><span class="token attr-value">[styleObjectA<span class="token punctuation">,</span> styleObjectB]</span><span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 绑定一个全是 attribute 的对象 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-bind</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ id: someProp, <span class="token punctuation">'</span>other-attr<span class="token punctuation">'</span>: otherProp }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 通过 prop 修饰符绑定 DOM attribute --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name"><span class="token namespace">v-bind:</span>text-content.prop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- prop 绑定。“prop”必须在 my-component 中声明。--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">:prop</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>someThing<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 通过 $props 将父组件的 props 一起传给子组件 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>child-component</span> <span class="token attr-name">v-bind</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>$props<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>child-component</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- XLink --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">:xlink:special</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><code>.camel</code> 修饰符允许在使用 DOM 模板时将 <code>v-bind property</code> 名称驼峰化，例如 SVG 的 <code>viewBox property</code>：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">:view-box.camel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewBox<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>在使用字符串模板或通过 vue-loader/vueify 编译时，无需使用 .camel。</p> <h2 id="_10、v-model"><a href="#_10、v-model" class="header-anchor">#</a> 10、v-model</h2> <p><font size="15" color="#0099ff">v-model</font></p> <ul><li>预期：随表单控件类型不同而不同。</li> <li>限制：
+<ul><li><code>&lt;input&gt;</code></li> <li><code>&lt;select&gt;</code></li> <li><code>&lt;textarea&gt;</code></li> <li><code>components</code></li></ul></li> <li>修饰符：
+<ul><li><code>.lazy</code>   - 取代 <code>input</code> 监听 <code>change</code> 事件</li> <li><code>.number</code> - 输入字符串转为有效的数字</li> <li><code>.trim</code>   - 输入首尾空格过滤</li></ul></li> <li>语法：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>v<span class="token operator">-</span>model：<span class="token string">&quot;name&quot;</span>
+<span class="token comment">//name 是数据的键 | ？</span>
+</code></pre></div><ul><li><p>用法：
+在表单控件或者组件上创建双向绑定。细节请看下面的教程链接。</p></li> <li><p>作用：主要是给表单元素绑定的指令，不能绑定普通元素,
+表单元素会忽略value属性，把vue实例上的数据作为初始数据</p></li></ul> <p>给表单元素添加的指令，用来做双向数据绑定的
+表单： text password textarea radio checkbox select
+会忽略表单元素的value属性，把data中的数据作为初始来源数据</p> <h2 id="_11、v-slot"><a href="#_11、v-slot" class="header-anchor">#</a> 11、v-slot</h2> <p><font size="15" color="#0099ff">v-slot</font></p> <ul><li>缩写：<code>#</code></li> <li>预期：可放置在函数参数位置的 JavaScript 表达式 (在支持的环境下可使用解构)。可选，即只需要在为插槽传入 prop 的时候使用。</li> <li>参数：插槽名 (可选，默认值是 default)</li> <li>限用于
+<ul><li><code>&lt;template&gt;</code></li> <li>组件 (对于一个单独的带 <code>prop</code> 的默认插槽)</li></ul></li> <li>用法：
+提供具名插槽或需要接收 prop 的插槽。</li> <li>示例：</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 具名插槽 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>base-layout</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>header</span><span class="token punctuation">&gt;</span></span>
+    Header content
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+
+  Default slot content
+
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>footer</span><span class="token punctuation">&gt;</span></span>
+    Footer content
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>base-layout</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 接收 prop 的具名插槽 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>infinite-scroll</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span> <span class="token attr-name"><span class="token namespace">v-slot:</span>item</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>slotProps<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>item<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      {{ slotProps.item.text }}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>infinite-scroll</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token comment">&lt;!-- 接收 prop 的默认插槽，使用了解构 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>mouse-position</span> <span class="token attr-name">v-slot</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>{ x, y }<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  Mouse position: {{ x }}, {{ y }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>mouse-position</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>更多细节请查阅<a href="https://cn.vuejs.org/v2/guide/components-slots.html" target="_blank" rel="noopener noreferrer">组件 - 插槽<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h2 id="_12、v-pre"><a href="#_12、v-pre" class="header-anchor">#</a> 12、v-pre</h2> <p><font size="15" color="#0099ff">12、v-pre</font></p> <ul><li><p>不需要表达式</p></li> <li><p>用法：</p></li></ul> <p>跳过这个元素和它的子元素的编译过程。可以用来显示原始 Mustache 标签。跳过大量没有指令的节点会加快编译。</p> <ul><li>示例：</li></ul> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-pre</span><span class="token punctuation">&gt;</span></span>{{ this will not be compiled }}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="_13、v-cloak"><a href="#_13、v-cloak" class="header-anchor">#</a> 13、v-cloak</h2> <p><font size="15" color="#0099ff">v-cloak</font></p> <ul><li><p>不需要表达式</p></li> <li><p>用法：</p></li></ul> <p>这个指令保持在元素上直到关联实例结束编译。和 CSS 规则如 [v-cloak] { display: none } 一起用时，这个指令可以隐藏未编译的 Mustache 标签直到实例准备完毕。</p> <ul><li>示例：</li></ul> <div class="language-css extra-class"><pre class="language-css"><code><span class="token selector">[v-cloak]</span> <span class="token punctuation">{</span>
+  <span class="token property">display</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-cloak</span><span class="token punctuation">&gt;</span></span>
+  {{ message }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p>不会显示，直到编译结束。</p> <h2 id="_14、v-once"><a href="#_14、v-once" class="header-anchor">#</a> 14、v-once</h2> <p><font size="15" color="#0099ff">v-once</font></p> <ul><li><p>不需要表达式</p></li> <li><p>详细：</p></li></ul> <p>只渲染元素和组件一次。随后的重新渲染，元素/组件及其所有的子节点将被视为静态内容并跳过。这可以用于优化更新性能。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 单个元素 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">v-once</span><span class="token punctuation">&gt;</span></span>This will never change: {{msg}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 有子元素 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">v-once</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>comment<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>{{msg}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- 组件 --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>my-component</span> <span class="token attr-name">v-once</span> <span class="token attr-name">:comment</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>msg<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>my-component</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- `v-for` 指令--&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">v-for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>i in list<span class="token punctuation">&quot;</span></span> <span class="token attr-name">v-once</span><span class="token punctuation">&gt;</span></span>{{i}}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><hr> <h2 id="特殊-attribute-及其他"><a href="#特殊-attribute-及其他" class="header-anchor">#</a> <a href="https://cn.vuejs.org/v2/api/#%E7%89%B9%E6%AE%8A-attribute" target="_blank" rel="noopener noreferrer">特殊 attribute 及其他<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h2></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">12/17/2020, 7:44:53 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是guangju欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-ribbon"></canvas><div><div class="sponsor-container" data-v-a142c76a><div class="sponsor-love position-absolute transition-3ms" data-v-a142c76a>
+    Sponsor
+  </div> <a href="https://github.com/yokefellow/vuepress-plugin-sponsor" target="_blank" title="Github" class="sponsor-github position-absolute transition-3ms" data-v-a142c76a></a> <ul class="sponsor-payment-options transition-3ms" data-v-a142c76a><li id="alipay-option" class="transition-3ms" data-v-a142c76a></li> <li id="wechat-option" class="transition-3ms" data-v-a142c76a></li> <li id="qq-option" class="transition-3ms" data-v-a142c76a></li> <li id="paypal-option" class="transition-3ms" data-v-a142c76a></li></ul> <div class="sponsor-qrcode-container position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a><div class="sponsor-qrcode-info" style="background-image:url();pointer-events:none;display:none;" data-v-a142c76a data-v-a142c76a></div></div> <div class="sponsor-message position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a>
+      主人忘记设置啦
+    </div></div></div></div></div>
+    <script src="/assets/js/app.acb9cd7c.js" defer></script><script src="/assets/js/3.76545830.js" defer></script><script src="/assets/js/1.12bc23b5.js" defer></script><script src="/assets/js/48.2865ac61.js" defer></script>
+  </body>
+</html>

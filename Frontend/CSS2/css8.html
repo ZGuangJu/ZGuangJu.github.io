@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第8章 文本处理能力 | GuangJu&#39;S NoteBook</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/linktolink.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.40853667.css" as="style"><link rel="preload" href="/assets/js/app.acb9cd7c.js" as="script"><link rel="preload" href="/assets/js/3.76545830.js" as="script"><link rel="preload" href="/assets/js/1.12bc23b5.js" as="script"><link rel="preload" href="/assets/js/91.041415b0.js" as="script"><link rel="prefetch" href="/assets/js/10.71f49e58.js"><link rel="prefetch" href="/assets/js/100.568eec07.js"><link rel="prefetch" href="/assets/js/101.f75de0ff.js"><link rel="prefetch" href="/assets/js/102.a36c9b9c.js"><link rel="prefetch" href="/assets/js/103.8cbc8a8f.js"><link rel="prefetch" href="/assets/js/104.5247c211.js"><link rel="prefetch" href="/assets/js/105.4753fb1b.js"><link rel="prefetch" href="/assets/js/106.b0e86d49.js"><link rel="prefetch" href="/assets/js/107.e4579500.js"><link rel="prefetch" href="/assets/js/108.36c92521.js"><link rel="prefetch" href="/assets/js/109.d2382581.js"><link rel="prefetch" href="/assets/js/11.0eec3018.js"><link rel="prefetch" href="/assets/js/110.1d56a1c7.js"><link rel="prefetch" href="/assets/js/111.4ec8a304.js"><link rel="prefetch" href="/assets/js/112.286126e5.js"><link rel="prefetch" href="/assets/js/113.88c89f56.js"><link rel="prefetch" href="/assets/js/114.d6f0c25d.js"><link rel="prefetch" href="/assets/js/115.a07730f9.js"><link rel="prefetch" href="/assets/js/116.de8b0c73.js"><link rel="prefetch" href="/assets/js/117.9be44c87.js"><link rel="prefetch" href="/assets/js/118.e281b966.js"><link rel="prefetch" href="/assets/js/119.c03cb8ce.js"><link rel="prefetch" href="/assets/js/12.d202d19c.js"><link rel="prefetch" href="/assets/js/120.c54a2e80.js"><link rel="prefetch" href="/assets/js/121.7a12f2a8.js"><link rel="prefetch" href="/assets/js/122.0b678b92.js"><link rel="prefetch" href="/assets/js/123.26c00b81.js"><link rel="prefetch" href="/assets/js/124.eeaa333d.js"><link rel="prefetch" href="/assets/js/125.99d26dc0.js"><link rel="prefetch" href="/assets/js/126.13fca0a9.js"><link rel="prefetch" href="/assets/js/127.8054b73d.js"><link rel="prefetch" href="/assets/js/128.7accebb8.js"><link rel="prefetch" href="/assets/js/129.08811073.js"><link rel="prefetch" href="/assets/js/13.484e01df.js"><link rel="prefetch" href="/assets/js/130.c9b6e8dc.js"><link rel="prefetch" href="/assets/js/131.f8f1d0cf.js"><link rel="prefetch" href="/assets/js/132.7864f0c5.js"><link rel="prefetch" href="/assets/js/133.aeafdd91.js"><link rel="prefetch" href="/assets/js/134.8a218b55.js"><link rel="prefetch" href="/assets/js/135.befc3a22.js"><link rel="prefetch" href="/assets/js/136.ec32cf2d.js"><link rel="prefetch" href="/assets/js/137.7ac0f702.js"><link rel="prefetch" href="/assets/js/138.72bfc9c2.js"><link rel="prefetch" href="/assets/js/139.5a863a01.js"><link rel="prefetch" href="/assets/js/14.290cb36e.js"><link rel="prefetch" href="/assets/js/140.f27f28e2.js"><link rel="prefetch" href="/assets/js/141.7565a60f.js"><link rel="prefetch" href="/assets/js/142.2e64f412.js"><link rel="prefetch" href="/assets/js/143.48ee7de5.js"><link rel="prefetch" href="/assets/js/144.bf60a6cf.js"><link rel="prefetch" href="/assets/js/145.b29e0081.js"><link rel="prefetch" href="/assets/js/146.aebadec9.js"><link rel="prefetch" href="/assets/js/147.ef81f716.js"><link rel="prefetch" href="/assets/js/148.37b1436d.js"><link rel="prefetch" href="/assets/js/149.137674ab.js"><link rel="prefetch" href="/assets/js/15.378109e6.js"><link rel="prefetch" href="/assets/js/150.6ac29410.js"><link rel="prefetch" href="/assets/js/151.1d8978fe.js"><link rel="prefetch" href="/assets/js/152.4dd1caa4.js"><link rel="prefetch" href="/assets/js/153.f71dc98b.js"><link rel="prefetch" href="/assets/js/154.9c3e6922.js"><link rel="prefetch" href="/assets/js/155.566eb07c.js"><link rel="prefetch" href="/assets/js/156.5773ac6d.js"><link rel="prefetch" href="/assets/js/157.733c74ae.js"><link rel="prefetch" href="/assets/js/158.368fe751.js"><link rel="prefetch" href="/assets/js/159.af79d3a4.js"><link rel="prefetch" href="/assets/js/16.22008244.js"><link rel="prefetch" href="/assets/js/160.5c7e9b39.js"><link rel="prefetch" href="/assets/js/161.2bc6524a.js"><link rel="prefetch" href="/assets/js/162.c323c71d.js"><link rel="prefetch" href="/assets/js/163.7352c855.js"><link rel="prefetch" href="/assets/js/164.adba7776.js"><link rel="prefetch" href="/assets/js/165.e4a9f519.js"><link rel="prefetch" href="/assets/js/166.97a8e6db.js"><link rel="prefetch" href="/assets/js/167.34910ef7.js"><link rel="prefetch" href="/assets/js/168.d6752a23.js"><link rel="prefetch" href="/assets/js/169.0575e7f3.js"><link rel="prefetch" href="/assets/js/17.c411d0bf.js"><link rel="prefetch" href="/assets/js/170.2b8d6ca6.js"><link rel="prefetch" href="/assets/js/171.77c53d3c.js"><link rel="prefetch" href="/assets/js/172.94f34ed8.js"><link rel="prefetch" href="/assets/js/173.78ebf17d.js"><link rel="prefetch" href="/assets/js/174.0a6b1bb2.js"><link rel="prefetch" href="/assets/js/175.50f7de76.js"><link rel="prefetch" href="/assets/js/176.ce8cdbd8.js"><link rel="prefetch" href="/assets/js/177.7b4ebf0a.js"><link rel="prefetch" href="/assets/js/178.6a863fac.js"><link rel="prefetch" href="/assets/js/179.df719de9.js"><link rel="prefetch" href="/assets/js/18.49ce348e.js"><link rel="prefetch" href="/assets/js/180.232da06a.js"><link rel="prefetch" href="/assets/js/181.e8a15aa9.js"><link rel="prefetch" href="/assets/js/19.457b97c4.js"><link rel="prefetch" href="/assets/js/20.3a3cbf21.js"><link rel="prefetch" href="/assets/js/21.8e717d10.js"><link rel="prefetch" href="/assets/js/22.49e03d3a.js"><link rel="prefetch" href="/assets/js/23.735c371c.js"><link rel="prefetch" href="/assets/js/24.b5fb66f0.js"><link rel="prefetch" href="/assets/js/25.d6bd260b.js"><link rel="prefetch" href="/assets/js/26.35c782b8.js"><link rel="prefetch" href="/assets/js/27.becc04e9.js"><link rel="prefetch" href="/assets/js/28.b52d36a0.js"><link rel="prefetch" href="/assets/js/29.b32db475.js"><link rel="prefetch" href="/assets/js/30.98df5e0f.js"><link rel="prefetch" href="/assets/js/31.3f39a854.js"><link rel="prefetch" href="/assets/js/32.cfb80a2b.js"><link rel="prefetch" href="/assets/js/33.04afbac5.js"><link rel="prefetch" href="/assets/js/34.9bcb7959.js"><link rel="prefetch" href="/assets/js/35.e711be96.js"><link rel="prefetch" href="/assets/js/36.51d1f0b7.js"><link rel="prefetch" href="/assets/js/37.ed4ff1f2.js"><link rel="prefetch" href="/assets/js/38.5d00a06b.js"><link rel="prefetch" href="/assets/js/39.933e3c46.js"><link rel="prefetch" href="/assets/js/4.26c14f14.js"><link rel="prefetch" href="/assets/js/40.fe55c56b.js"><link rel="prefetch" href="/assets/js/41.612f7aae.js"><link rel="prefetch" href="/assets/js/42.591dbd1e.js"><link rel="prefetch" href="/assets/js/43.75a4b33e.js"><link rel="prefetch" href="/assets/js/44.1215c578.js"><link rel="prefetch" href="/assets/js/45.25e5278d.js"><link rel="prefetch" href="/assets/js/46.3772feb9.js"><link rel="prefetch" href="/assets/js/47.7c8fc33b.js"><link rel="prefetch" href="/assets/js/48.2865ac61.js"><link rel="prefetch" href="/assets/js/49.ec4f4be9.js"><link rel="prefetch" href="/assets/js/5.4ff0b5b6.js"><link rel="prefetch" href="/assets/js/50.5b401113.js"><link rel="prefetch" href="/assets/js/51.b563e194.js"><link rel="prefetch" href="/assets/js/52.bb519887.js"><link rel="prefetch" href="/assets/js/53.72717d06.js"><link rel="prefetch" href="/assets/js/54.ac236639.js"><link rel="prefetch" href="/assets/js/55.bff3c62e.js"><link rel="prefetch" href="/assets/js/56.0b4ef2b1.js"><link rel="prefetch" href="/assets/js/57.1806e275.js"><link rel="prefetch" href="/assets/js/58.3dfda0a9.js"><link rel="prefetch" href="/assets/js/59.adab08ca.js"><link rel="prefetch" href="/assets/js/6.4ed370e9.js"><link rel="prefetch" href="/assets/js/60.171754d7.js"><link rel="prefetch" href="/assets/js/61.450814c1.js"><link rel="prefetch" href="/assets/js/62.c070075c.js"><link rel="prefetch" href="/assets/js/63.334277a8.js"><link rel="prefetch" href="/assets/js/64.b5c9918e.js"><link rel="prefetch" href="/assets/js/65.e110a4f6.js"><link rel="prefetch" href="/assets/js/66.ec34322a.js"><link rel="prefetch" href="/assets/js/67.b478b5e8.js"><link rel="prefetch" href="/assets/js/68.a27bada6.js"><link rel="prefetch" href="/assets/js/69.58a6969b.js"><link rel="prefetch" href="/assets/js/7.1445cdc6.js"><link rel="prefetch" href="/assets/js/70.177fb6e3.js"><link rel="prefetch" href="/assets/js/71.48c15abd.js"><link rel="prefetch" href="/assets/js/72.280a39be.js"><link rel="prefetch" href="/assets/js/73.a53e010c.js"><link rel="prefetch" href="/assets/js/74.572ef5ba.js"><link rel="prefetch" href="/assets/js/75.d676daec.js"><link rel="prefetch" href="/assets/js/76.0f273ed9.js"><link rel="prefetch" href="/assets/js/77.31051b23.js"><link rel="prefetch" href="/assets/js/78.4066d9cc.js"><link rel="prefetch" href="/assets/js/79.0d3aa56a.js"><link rel="prefetch" href="/assets/js/8.bc731f91.js"><link rel="prefetch" href="/assets/js/80.d79f7210.js"><link rel="prefetch" href="/assets/js/81.3418c513.js"><link rel="prefetch" href="/assets/js/82.d18b7d2a.js"><link rel="prefetch" href="/assets/js/83.9c3f5393.js"><link rel="prefetch" href="/assets/js/84.7ac0b669.js"><link rel="prefetch" href="/assets/js/85.c51949d6.js"><link rel="prefetch" href="/assets/js/86.b316ed4e.js"><link rel="prefetch" href="/assets/js/87.388e4e03.js"><link rel="prefetch" href="/assets/js/88.90bda8ff.js"><link rel="prefetch" href="/assets/js/89.3c4ac2ea.js"><link rel="prefetch" href="/assets/js/9.00729029.js"><link rel="prefetch" href="/assets/js/90.f548bd4c.js"><link rel="prefetch" href="/assets/js/92.fa2b69d6.js"><link rel="prefetch" href="/assets/js/93.e2c77e1a.js"><link rel="prefetch" href="/assets/js/94.e48f3022.js"><link rel="prefetch" href="/assets/js/95.5672da69.js"><link rel="prefetch" href="/assets/js/96.013e9e2d.js"><link rel="prefetch" href="/assets/js/97.47454694.js"><link rel="prefetch" href="/assets/js/98.3f0d44d6.js"><link rel="prefetch" href="/assets/js/99.5dbf6765.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40853667.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>GuangJu'S NoteBook</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuangJu'S NoteBook</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/img/headimg.jpeg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    GuangJu
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>105</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>95</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>CSS教程</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Frontend/CSS2/css0.html" class="sidebar-link">CSS世界--目录</a></li><li><a href="/Frontend/CSS2/css1.html" class="sidebar-link">第1章 概述</a></li><li><a href="/Frontend/CSS2/css3.html" class="sidebar-link">第3章 流、元素和基本概念</a></li><li><a href="/Frontend/CSS2/css4.html" class="sidebar-link">第4章 盒尺寸四大家族</a></li><li><a href="/Frontend/CSS2/css5.html" class="sidebar-link">第5章 内联元素与流</a></li><li><a href="/Frontend/CSS2/css6.html" class="sidebar-link">第6章 流的破坏与保护</a></li><li><a href="/Frontend/CSS2/css7.html" class="sidebar-link">第7章 层叠规则</a></li><li><a href="/Frontend/CSS2/css8.html" aria-current="page" class="active sidebar-link">第8章 文本处理能力</a></li><li><a href="/Frontend/CSS2/css9.html" class="sidebar-link">第9章 元素的修饰与美化</a></li><li><a href="/Frontend/CSS2/css10.html" class="sidebar-link">第10章 元素的显示与隐藏</a></li><li><a href="/Frontend/CSS2/css11.html" class="sidebar-link">第11章 用户界面样式</a></li><li><a href="/Frontend/CSS2/css12.html" class="sidebar-link">第12章 流向的改变</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>ES6</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Promise</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JQuery</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Ajax</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Axios</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TypeScript</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>第8章 文本处理能力</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">第8章 文本处理能力</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>GuangJu</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2018-09-23</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Frontend/CSS2/css8.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>前端基础</span><span class="tag-item" data-v-3b7f5bdf>CSS</span><span class="tag-item" data-v-3b7f5bdf>CSS教程</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="第8章-文本处理能力"><a href="#第8章-文本处理能力" class="header-anchor">#</a> 第8章 文本处理能力</h2> <h2 id="line-height的另一个朋友font-size"><a href="#line-height的另一个朋友font-size" class="header-anchor">#</a> <code>line-height</code>的另一个朋友<code>font-size</code></h2> <p><code>vertical-align</code>百分比值属性是相对于<code>line-height</code>计算，<code>line-height</code>的数值属性和百分比值都是相对于<code>font-size</code>计算。</p> <h2 id="font-size和vertical-align的隐秘故事"><a href="#font-size和vertical-align的隐秘故事" class="header-anchor">#</a> <code>font-size</code>和<code>vertical-align</code>的隐秘故事</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">data-height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>265<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-theme-id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>0<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-slug-hash</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>jpzveQ<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-default-tab</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>css,result<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-user</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>whjin<span class="token punctuation">&quot;</span></span> <span class="token attr-name">data-pen-title</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>图标垂直居中<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>codepen<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>See the Pen <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://codepen.io/whjin/pen/jpzveQ/<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>图标垂直居中<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span> by whjin (<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://codepen.io/whjin<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>@whjin<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>) on <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://codepen.io<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>CodePen<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">async</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://static.codepen.io/assets/embed/ei.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><strong>原理：内联元素默认基线对齐，图片的基线是图片的下边缘，文字内容的基线是字符<code>x</code>下边缘。图片下边缘和文字字形边缘往上位置对齐。通过<code>vertical-align:25%</code>声明让图片的下边缘和中文汉字的中心线对齐。</strong></p> <h2 id="理解font-size与ex、em和rem的关系"><a href="#理解font-size与ex、em和rem的关系" class="header-anchor">#</a> 理解<code>font-size</code>与<code>ex</code>、<code>em</code>和<code>rem</code>的关系</h2> <p>总结：<code>1em</code>的计算值等同当前元素所在的<code>font-size</code>计算值。</p> <h2 id="理解font-size的关键字属性值"><a href="#理解font-size的关键字属性值" class="header-anchor">#</a> 理解<code>font-size</code>的关键字属性值</h2> <ol><li>相对尺寸关键字。<code>larger</code>、<code>smaller</code></li> <li>绝对尺寸关键字。<code>xx-large</code>、<code>x-large</code>、<code>large</code>、<code>medium</code>、<code>small</code>、<code>x-small</code>、<code>xx-small</code></li></ol> <ul><li>容器设置<code>font-size:medium</code>，此时这个局部展示区域的字号跟随浏览器的设置，默认计算值是<code>16px</code>。</li> <li>容器内的文字字号全部使用相对单位，如百分比值或<code>em</code>，然后基于<code>16px</code>进行转换。</li></ul> <h2 id="font-size-0与文本的隐藏"><a href="#font-size-0与文本的隐藏" class="header-anchor">#</a> <code>font-size:0</code>与文本的隐藏</h2> <p>隐藏<code>logo</code>对应元素内的文字，除了<code>text-indent</code>缩进隐藏外，还可以使用以下方法：</p> <div class="language- extra-class"><pre><code>.logo {
+    font-size: 0;
+}
+</code></pre></div><h2 id="字体属性家族font-family"><a href="#字体属性家族font-family" class="header-anchor">#</a> 字体属性家族<code>font-family</code></h2> <p><code>font-family</code>支持两类属性值，一类是<strong>字体名</strong>，一类是<strong>字体族</strong>。</p> <p><strong>字体族</strong>：</p> <ul><li><code>serif</code>：衬线字体</li> <li><code>sans-serif</code>：无衬线字体</li> <li><code>monospace</code>：等宽字体</li> <li><code>cursive</code>：手写字体</li> <li><code>fantasy</code>：奇幻字体</li> <li><code>system-ui1</code>：系统UI字体</li></ul> <h2 id="了解衬线字体和无衬线字体"><a href="#了解衬线字体和无衬线字体" class="header-anchor">#</a> 了解衬线字体和无衬线字体</h2> <p>字体分衬线字体和无衬线字体。</p> <ul><li>中文衬线字体<strong>宋体</strong>，英文衬线字体<strong>Times New Roman</strong>、<strong>Georgian</strong>等；</li> <li>无衬线字体，中文<strong>雅黑</strong>字体，英文<strong>Arial</strong>、<strong>Verdana</strong>、<strong>Tahoma</strong>、<strong>Helivetica</strong>、<strong>Calibra</strong>等。</li></ul> <h2 id="等宽字体的实践价值"><a href="#等宽字体的实践价值" class="header-anchor">#</a> 等宽字体的实践价值</h2> <p><strong>1. 等宽字体与代码呈现</strong></p> <p><strong>2. 等宽字体与图形呈现</strong></p> <p><strong>3. <code>ch</code>单位与等宽字体布局</strong></p> <p><code>1ch</code>表示一个<code>0</code>字符的宽度。</p> <h2 id="中文字体和英文名称"><a href="#中文字体和英文名称" class="header-anchor">#</a> 中文字体和英文名称</h2> <p><strong>Windows常见内置中文字体和对应英文名称。</strong></p> <table><thead><tr><th style="text-align:left;">字体中文名</th> <th style="text-align:left;">字体英文名</th></tr></thead> <tbody><tr><td style="text-align:left;">宋体</td> <td style="text-align:left;">SimSun</td></tr> <tr><td style="text-align:left;">黑体</td> <td style="text-align:left;">SimHei</td></tr> <tr><td style="text-align:left;">微软雅黑</td> <td style="text-align:left;">Microsoft Yahei</td></tr> <tr><td style="text-align:left;">微软正黑体</td> <td style="text-align:left;">Microsoft JhengHei</td></tr> <tr><td style="text-align:left;">楷体</td> <td style="text-align:left;">KaiTi</td></tr> <tr><td style="text-align:left;">新宋体</td> <td style="text-align:left;">NSimSun</td></tr> <tr><td style="text-align:left;">仿宋</td> <td style="text-align:left;">FangSong</td></tr></tbody></table> <h2 id="一些补充说明"><a href="#一些补充说明" class="header-anchor">#</a> 一些补充说明</h2> <p>微软正黑体是一款全面支持ClearType技术的TrueType<strong>无衬线字体</strong>，用于繁体中文系统。</p> <h1 id="字体家族其他成员"><a href="#字体家族其他成员" class="header-anchor">#</a> 字体家族其他成员</h1> <h2 id="font-weight"><a href="#font-weight" class="header-anchor">#</a> <code>font-weight</code></h2> <h2 id="font-style"><a href="#font-style" class="header-anchor">#</a> <code>font-style</code></h2> <ul><li><code>font-style:normal</code></li> <li><code>font-style:italic</code>，使用当前字体的斜体</li> <li><code>font-style:oblique</code>，单纯让文字倾斜</li></ul> <h2 id="font-variant"><a href="#font-variant" class="header-anchor">#</a> <code>font-variant</code></h2> <h1 id="font属性"><a href="#font属性" class="header-anchor">#</a> <code>font</code>属性</h1> <h2 id="缩写的font属性"><a href="#缩写的font属性" class="header-anchor">#</a> 缩写的<code>font</code>属性</h2> <p>完整语法：<code>[font-style||font-variant||font-weight]?font-size[/line-height]?font-family</code>，（<code>font-size</code>和<code>font-family</code>是必需项）。</p> <p><code>font</code>缩写会破坏部分属性的继承性，必须要带上<code>font-family</code>。利用<code>@font face</code>规则将字体列表重定义为一个字体。</p> <h2 id="使用关键字值得font属性"><a href="#使用关键字值得font属性" class="header-anchor">#</a> 使用关键字值得<code>font</code>属性</h2> <p><code>font</code>属性支持关键字属性值，语法：<code>font:caption|icon|menu|message-box|small-caption|status-bar</code></p> <ul><li><code>caption</code>：活动窗口标题栏使用的字体</li> <li><code>icon</code>：包含图标内容所使用的字体，如所有文件夹名称、文件名称、磁盘名称，浏览器窗口标题所使用的字体</li> <li><code>menu</code>：菜单使用的字体，如文件夹字体</li> <li><code>message-box</code>：消息盒里面使用的字体</li> <li><code>small-caption</code>：调色板标题所使用的字体</li> <li><code>status-bar</code>：窗体状态栏使用的字体</li></ul> <p>使用关键字作为属性值必须是独立的，不能添加<code>font-family</code>或<code>font-size</code>等。</p> <h2 id="font关键字属性值的应用价值"><a href="#font关键字属性值的应用价值" class="header-anchor">#</a> <code>font</code>关键字属性值的应用价值</h2> <div class="language- extra-class"><pre><code>//推荐使用
+html {font: menu;}
+body {font-size: 16px;}
+
+html {font: small-caption;}
+body {font-size: 16px;}
+
+html {font: status-bar;}
+body {font-size: 16px;}
+</code></pre></div><h1 id="font-face规则"><a href="#font-face规则" class="header-anchor">#</a> <code>@font face</code>规则</h1> <h2 id="font-face的本质是变量"><a href="#font-face的本质是变量" class="header-anchor">#</a> <code>@font face</code>的本质是变量</h2> <p><code>@font face</code>的本质上就是一个定义字体或字体集的变量，包括字体重命名、默认字体样式设置等。</p> <p><code>@font face</code>规则支持的CSS属性有<code>font-family</code>、<code>src</code>、<code>font-style</code>、<code>font-weight</code>、<code>unicode-range</code>、<code>font-variant</code>、<code>font-stretch</code>和<code>font-feature-settings</code>。</p> <div class="language- extra-class"><pre><code>@font-face {
+    font-family: 'example';
+    src: url(&quot;example.ttf&quot;);
+    font-style: normal;
+    font-weight: normal;
+    unicode-range: U+0025-00FF;
+    font-variant: small-caps;//忽略
+    font-stretch: expanded;//忽略
+    font-feature-settings: &quot;ligal&quot; on;//忽略
+}
+</code></pre></div><p><strong>1. <code>font-family</code></strong></p> <div class="language- extra-class"><pre><code>@font-face {
+    font-family: '$';
+    src: url(&quot;example.ttf&quot;);
+}
+</code></pre></div><p><strong>2. <code>src</code></strong></p> <p>如果是使用系统字体，则使用<code>local()</code>功能符；如果使用外链字体，则使用<code>url()</code>功能符。</p> <div class="language- extra-class"><pre><code>@font-face {
+    font-family: ICON;
+    src: url(&quot;icon.eot&quot;) format('eot');
+    src: url(&quot;icon.eot?#iefix&quot;) format(&quot;embedded-opentype&quot;),
+    url(&quot;icon.woff2&quot;) format(&quot;woff2&quot;),
+    url(&quot;icon.woff&quot;) format(&quot;woff&quot;),
+    url(&quot;icon.ttf&quot;) format(&quot;truetype&quot;),
+    url(&quot;icon.svg#icon&quot;) format(&quot;svg&quot;);
+    font-style: normal;
+    font-weight: normal;
+}
+</code></pre></div><ul><li><code>eot</code>格式是IE私有的。（<strong>舍弃</strong>）</li> <li><code>woff</code>是专门为Web开发而设计的字体格式。（<strong>次优先使用</strong>）</li> <li><code>woff2</code>是比<code>woff</code>尺寸更小的字体，是Web开发首选字体。（<strong>优先使用</strong>）</li> <li><code>ttf</code>格式作为系统安装字体比较多。（<strong>舍弃</strong>）</li></ul> <p><strong>推荐使用方法</strong>：</p> <div class="language- extra-class"><pre><code>@font-face {
+    font-family: ICON;
+    src: url(&quot;icon.eot&quot;) format('eot');
+    src: local('☺'),
+    url(&quot;icon.woff2&quot;) format(&quot;woff2&quot;),
+    url(&quot;icon.woff&quot;) format(&quot;woff&quot;),
+    url(&quot;icon.ttf&quot;) format(&quot;truetype&quot;);
+}
+</code></pre></div><p><strong>3. <code>font-style</code></strong></p> <p><strong>4. <code>font-weight</code></strong></p> <p><strong>5. <code>unicode-range</code></strong></p> <p><code>unicode-range</code>的作用是可以让特定的字符或特定范围的字符使用指定的字体。</p> <h2 id="font-face与字体图标技术"><a href="#font-face与字体图标技术" class="header-anchor">#</a> <code>@font face</code>与字体图标技术</h2> <div class="language- extra-class"><pre><code>.icon {
+    font-family: ICON;
+}
+
+.icon-microphone:before {
+    content: '\1f3a4';
+}
+</code></pre></div><h1 id="文本的控制"><a href="#文本的控制" class="header-anchor">#</a> 文本的控制</h1> <h2 id="text-indent与内联元素缩进"><a href="#text-indent与内联元素缩进" class="header-anchor">#</a> <code>text-indent</code>与内联元素缩进</h2> <p><code>text-indent</code>负值隐藏文本内容。</p> <p data-height="265" data-theme-id="0" data-slug-hash="pZVrba" data-default-tab="html,result" data-user="whjin" data-pen-title="text-indent与纯文本对齐布局" class="codepen">See the Pen <a href="https://codepen.io/whjin/pen/pZVrba/">text-indent与纯文本对齐布局</a> by whjin (<a href="https://codepen.io/whjin">@whjin</a>) on <a href="https://codepen.io">CodePen</a>.</p> <script async="async" src="https://static.codepen.io/assets/embed/ei.js"></script> <ol><li><code>text-indent</code>仅对第一行内联盒子内容有效；</li> <li>非替换元素以外的<code>display</code>计算值为<code>inline</code>的内联元素设置<code>text-indent</code>值无效，如果计算值是<code>inline-block/inline-table</code>则会生效。因此，如果父级块状元素设置了<code>text-indent</code>属性值，子<code>inline-block/inline-table</code>需要设置<code>text-indent:0</code>重置。</li> <li><code>input</code>标签按钮<code>text-indent</code>值无效。</li> <li><code>button</code>标签按钮<code>text-indent</code>值有效，但存在兼容性问题。</li> <li><code>input</code>和<code>textarea</code>输入框的<code>text-indent</code>在低版本IE下有兼容性问题。</li></ol> <h2 id="letter-spacing与字符间距"><a href="#letter-spacing与字符间距" class="header-anchor">#</a> <code>letter-spacing</code>与字符间距</h2> <p><code>letter-spacing</code>特性：</p> <ol><li>继承性；</li> <li>默认值是<code>normal</code>不是<code>0</code>。</li> <li>支持负值，且值足够大时会让字符形成重叠，甚至反向排列。</li> <li>第一行都会保留至少一个字符。</li> <li>支持小数值。</li> <li>暂时不支持百分比值。</li></ol> <h2 id="word-spacing与单词间距"><a href="#word-spacing与单词间距" class="header-anchor">#</a> <code>word-spacing</code>与单词间距</h2> <p><code>word-spacing</code>和<code>letter-spacing</code>共同特性：</p> <ol><li>具有继承性；</li> <li>默认值都是<code>normal</code>。</li> <li>都支持负值，都可以让字符重叠，不适合使用<code>word-spacing</code>来清除空白间隙。</li> <li>都支持小数值。</li> <li>间隔算法都会受到<code>text-align:jusitify</code>两端对齐的影响。</li></ol> <p>两者差异：</p> <p><code>letter-spacing</code>作用域所有字符，<code>word-spacing</code>仅作用于空格字符（增加空格的间隙宽度）。</p> <h2 id="了解word-break和word-wrap的区别"><a href="#了解word-break和word-wrap的区别" class="header-anchor">#</a> 了解<code>word-break</code>和<code>word-wrap</code>的区别</h2> <p><code>word-break</code>属性语法：</p> <ul><li><code>word-break:normal</code>：</li> <li><code>word-break:break-all</code>：允许任意非CJK（Chinese/Japanese/Korean）文本间的单词断行</li> <li><code>word-break:keep-all</code>：不允许CJK文本中的单词换行，只能在半角空格或连字符处换行。实际上和<code>normal</code>一致。移动端不适合使用这个属性值。</li></ul> <p><code>word-wrap</code>语法：</p> <ul><li><code>word-wrap:normal</code>：正常的换行规则</li> <li><code>word-wrap:break-word</code>：一行单词中没有换行点时换行，CSS3中名称<code>overflow-wrap</code></li></ul> <p><code>word-break:break-all</code>的作用是所有的都换行，而<code>word-wrap:break-word</code>则是如果这一行文字有了可换行的点（如空格或CJK等），就在这些换行点换行。</p> <p data-height="300" data-theme-id="0" data-slug-hash="ejrPJq" data-default-tab="css,result" data-user="whjin" data-pen-title="word-break:break-all和word-wrap:break-word的区别" class="codepen">See the Pen <a href="https://codepen.io/whjin/pen/ejrPJq/">word-break:break-all和word-wrap:break-word的区别</a> by whjin (<a href="https://codepen.io/whjin">@whjin</a>) on <a href="https://codepen.io">CodePen</a>.</p> <script async="async" src="https://static.codepen.io/assets/embed/ei.js"></script> <h2 id="white-space与换行和空格的控制"><a href="#white-space与换行和空格的控制" class="header-anchor">#</a> <code>white-space</code>与换行和空格的控制</h2> <p><strong>1. <code>white-space</code>的处理模型</strong></p> <p><code>white-space</code>属性声明了如何处理元素内的空白字符，包括<strong>空格键</strong><code>Space</code>、<strong>回车键</strong><code>Enter</code>、<strong>制表符</strong><code>Tab</code>产生的空白。<code>white-space</code>可以决定图文内容是否在一行显示（回车键是否生效），是否显示大段连续空白（空格是否生效）等。</p> <p>其属性值包括：</p> <ul><li><code>normal</code>：合并空白字符和换行符。</li> <li><code>pre</code>：空白字符不合并，并且内容只在有换行符的地方换行。</li> <li><code>nowrap</code>：和<code>normal</code>一样会合并空白字符，但不允许文本环绕。</li> <li><code>pre-wrap</code>：和<code>pre</code>一样，但允许文本环绕。</li> <li><code>pre-line</code>：合并空白字符，但只在有换行符的地方换行允许文本环绕。</li></ul> <p><code>white-space</code>的功能有3个维度，分别是：<strong>是否合并空白字符</strong>、<strong>是否合并换行符</strong>、<strong>文本是否自动换行</strong>。</p> <h4 style="text-align:center;">**`white-space`不同属性值功能示意**</h4> <p>| 属性       | 换行 | 空格和制表 | 文本环绕 |
+| ---------- |
+| <code>normal</code>   | 合并 | 合并       | 环绕     |
+| <code>nowrap</code>   | 合并 | 合并       | 不环绕   |
+| <code>pre</code>      | 保留 | 保留       | 不环绕   |
+| <code>pre-wrap</code> | 保留 | 保留       | 环绕     |
+| <code>pre-line</code> | 保留 | 合并       | 环绕     |</p> <p><strong>2. <code>white-space</code>与最大可用宽度</strong></p> <p>当<code>white-space</code>设置为<code>nowrap</code>时，元素的宽度表现为<strong>最大可用宽度</strong>，换行符和一些空格全部合并，文本一行显示。</p> <ol><li><strong>包含块尺寸大小处理</strong>。绝对定位和<code>inline-block</code>元素都具有包裹性，当文本内容宽度超过包含块宽度时，就会发生文本环绕现象。</li> <li><strong>单行文字溢出<code>...</code>效果</strong>。<code>text-overflow:ellipsis;</code>文字内容超出打点效果离不开<code>white-space:nowrap;</code>声明。</li> <li><strong>水平列表切换效果</strong>。如果列表的数目是不固定的，使用<code>white-space:nowrap;</code>使列表一行显示。</li></ol> <h2 id="text-align与元素对齐"><a href="#text-align与元素对齐" class="header-anchor">#</a> <code>text-align</code>与元素对齐</h2> <p><code>text-align:justify</code>想要实现两端对齐布局效果，需要满足两点：一是<strong>有分隔点</strong>，如空格；二是<strong>要超过一行</strong>，此时不是最后一行内容会两端对齐。</p> <p><code>text-align-last</code>属性，可以规定最后一行内联内容的排列方式。</p> <div class="language- extra-class"><pre><code>.justify {
+    text-align-last: justify;
+}
+</code></pre></div><p>这个方法存在兼容性问题。</p> <h2 id="如何解决text-decoration下划线和文本重叠的问题"><a href="#如何解决text-decoration下划线和文本重叠的问题" class="header-anchor">#</a> 如何解决<code>text-decoration</code>下划线和文本重叠的问题</h2> <p>对于纯内联元素，垂直方向的<code>padding</code>属性和<code>border</code>属性对原来的布局定位等没有任何影响。</p> <blockquote><p>使用<code>border-bottom</code>模拟<code>text-decoration</code>下划线解决文本重叠的问题</p></blockquote> <h2 id="text-transform字符大小写"><a href="#text-transform字符大小写" class="header-anchor">#</a> <code>text-transform</code>字符大小写</h2> <p><code>text-transform</code>是为英文字符设计，<strong>全大写<code>text-transform:uppercase</code></strong>，<strong>全小写<code>text-transform:lowercase</code></strong></p> <p><strong>1. 场景一：身份证输入</strong></p> <p><strong>2. 场景二：验证码输入</strong></p> <h1 id="了解-first-letter-first-line伪元素"><a href="#了解-first-letter-first-line伪元素" class="header-anchor">#</a> 了解<code>:first-letter/:first-line</code>伪元素</h1> <h2 id="深入-first-letter伪元素及其实例"><a href="#深入-first-letter伪元素及其实例" class="header-anchor">#</a> 深入<code>:first-letter</code>伪元素及其实例</h2> <p><strong>1. <code>::first-letter</code>伪元素生效的前提</strong></p> <ul><li>元素的<code>display</code>计算值必须是<code>block</code>、<code>inline-block</code>、<code>list-item</code>、<code>table-cell/table-caption</code>，其他值没有用。</li> <li>可以直接作为伪元素的字符是数字、英文字母、中文、<code>$</code>、一些运算符，以及一些“空格”。</li> <li>字符前面不能有图片或<code>inline-block/inline-table</code>之类的元素存在。</li></ul> <p><strong>2. <code>::first-letter</code>伪元素可以生效的CSS属性</strong></p> <p>字符被选做<code>::first-letter</code>伪元素，只有一部分有效：</p> <ul><li>所有字体相关属性：<code>font</code>、<code>font-style</code>、<code>font-variant</code>、<code>font-weight</code>、<code>font-size</code>、<code>line-height</code>和<code>font-family</code>。</li> <li>所有背景相关属性：<code>background-color</code>、<code>background-image</code>、<code>background-position</code>、<code>background-repeat</code>、<code>background-size</code>和<code>background-attachment</code>。</li> <li>所有<code>margin</code>相关属性：<code>margin</code>、<code>margin-top/right/bottom/left</code>。</li> <li>所有<code>padding</code>相关属性：<code>padding</code>、<code>padding-top/right/bottom/left</code>。</li> <li>所有<code>border</code>相关属性：<code>border</code>、<code>border-style</code>、<code>border-color</code>、<code>border-width</code>。</li> <li><code>color</code>属性。</li> <li><code>text-decoration</code>、<code>text-transform</code>、<code>letter-spacing</code>、<code>word-spacing</code>、<code>line-height</code>、<code>float</code>和<code>vertical-align</code>（只有当<code>float:none</code>时）等属性。</li></ul> <p><strong>3. <code>::first-letter</code>伪元素特点</strong></p> <ol><li><p>支持部分<code>display</code>属性值标签嵌套。<code>::first-letter</code>伪元素获取可以跨标签，不仅能选择匿名内联盒子，还能透过层层标签进行选择。</p> <ul><li><code>display</code>值是<code>inline</code>、<code>block</code>、<code>table</code>、<code>table-row</code>、<code>table-caption</code>、<code>table-cell</code>、<code>list-item</code>有效。</li> <li><code>inline-block/inline-table</code>无效。</li> <li><code>display:flex</code>直接选择下一行的字符内容。</li></ul></li> <li><p>颜色等权重总是多了一层。<code>::first-letter</code>伪元素作为子元素存在，对于<code>color</code>继承属性，子元素的CSS设置一定比父元素的级别要高，即使使用了<code>!important</code>，<strong>子元素会先继承，然后再应用自身设置</strong>。</p> <div class="language-css extra-class"><pre class="language-css"><code> <span class="token selector">p:first-letter</span> <span class="token punctuation">{</span>
+     <span class="token property">color</span><span class="token punctuation">:</span> #cd0000<span class="token punctuation">;</span> <span class="token comment">/*第一个字符的颜色是red*/</span>
+ <span class="token punctuation">}</span>
+
+ <span class="token selector">p &gt; span</span> <span class="token punctuation">{</span>
+     <span class="token property">color</span><span class="token punctuation">:</span> blue <span class="token important">!important</span><span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+ &lt;p&gt;&lt;span&gt;第一个&lt;/span&gt;字符会不会变成红色？&lt;/p&gt;
+</code></pre></div></li></ol> <p><strong>4. <code>::first-letter</code>伪元素实际应用</strong></p> <div class="language-css extra-class"><pre class="language-css"><code> <span class="token selector">&lt;p class=&quot;price&quot;&gt;￥399&lt;/p&gt;
+ .price:first-letter</span> <span class="token punctuation">{</span>
+     <span class="token property">margin-right</span><span class="token punctuation">:</span> 5px<span class="token punctuation">;</span>
+     <span class="token property">font-size</span><span class="token punctuation">:</span> xx-large<span class="token punctuation">;</span>
+     <span class="token property">vertical-align</span><span class="token punctuation">:</span> -2px<span class="token punctuation">;</span>
+ <span class="token punctuation">}</span>
+ ```
+
+## `<span class="token punctuation">:</span>first-line`伪元素 ##
+
+- 只能作用在块级元素上`block/inline-block/list-item/table-cell/table-caption`
+- 仅支持部分CSS属性
+ - 所有字体相关属性
+ - `color`属性
+ - 所有背景相关属性
+ - `text-decoration`、`text-transfor`、`letter-spacing`、`word-spacing`、`line-height`和`vertical-align`
+ - 支持标签嵌套。不支持`table`属性
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">11/9/2020, 8:12:27 AM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是guangju欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-ribbon"></canvas><!----></div></div>
+    <script src="/assets/js/app.acb9cd7c.js" defer></script><script src="/assets/js/3.76545830.js" defer></script><script src="/assets/js/1.12bc23b5.js" defer></script><script src="/assets/js/91.041415b0.js" defer></script>
+  </body>
+</html>

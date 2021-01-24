@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React 起步 | GuangJu&#39;S NoteBook</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    <link rel="icon" href="/img/linktolink.png">
+    <meta name="description" content="欢迎，大爷儿来玩~">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/assets/css/0.styles.40853667.css" as="style"><link rel="preload" href="/assets/js/app.acb9cd7c.js" as="script"><link rel="preload" href="/assets/js/3.76545830.js" as="script"><link rel="preload" href="/assets/js/1.12bc23b5.js" as="script"><link rel="preload" href="/assets/js/28.b52d36a0.js" as="script"><link rel="prefetch" href="/assets/js/10.71f49e58.js"><link rel="prefetch" href="/assets/js/100.568eec07.js"><link rel="prefetch" href="/assets/js/101.f75de0ff.js"><link rel="prefetch" href="/assets/js/102.a36c9b9c.js"><link rel="prefetch" href="/assets/js/103.8cbc8a8f.js"><link rel="prefetch" href="/assets/js/104.5247c211.js"><link rel="prefetch" href="/assets/js/105.4753fb1b.js"><link rel="prefetch" href="/assets/js/106.b0e86d49.js"><link rel="prefetch" href="/assets/js/107.e4579500.js"><link rel="prefetch" href="/assets/js/108.36c92521.js"><link rel="prefetch" href="/assets/js/109.d2382581.js"><link rel="prefetch" href="/assets/js/11.0eec3018.js"><link rel="prefetch" href="/assets/js/110.1d56a1c7.js"><link rel="prefetch" href="/assets/js/111.4ec8a304.js"><link rel="prefetch" href="/assets/js/112.286126e5.js"><link rel="prefetch" href="/assets/js/113.88c89f56.js"><link rel="prefetch" href="/assets/js/114.d6f0c25d.js"><link rel="prefetch" href="/assets/js/115.a07730f9.js"><link rel="prefetch" href="/assets/js/116.de8b0c73.js"><link rel="prefetch" href="/assets/js/117.9be44c87.js"><link rel="prefetch" href="/assets/js/118.e281b966.js"><link rel="prefetch" href="/assets/js/119.c03cb8ce.js"><link rel="prefetch" href="/assets/js/12.d202d19c.js"><link rel="prefetch" href="/assets/js/120.c54a2e80.js"><link rel="prefetch" href="/assets/js/121.7a12f2a8.js"><link rel="prefetch" href="/assets/js/122.0b678b92.js"><link rel="prefetch" href="/assets/js/123.26c00b81.js"><link rel="prefetch" href="/assets/js/124.eeaa333d.js"><link rel="prefetch" href="/assets/js/125.99d26dc0.js"><link rel="prefetch" href="/assets/js/126.13fca0a9.js"><link rel="prefetch" href="/assets/js/127.8054b73d.js"><link rel="prefetch" href="/assets/js/128.7accebb8.js"><link rel="prefetch" href="/assets/js/129.08811073.js"><link rel="prefetch" href="/assets/js/13.484e01df.js"><link rel="prefetch" href="/assets/js/130.c9b6e8dc.js"><link rel="prefetch" href="/assets/js/131.f8f1d0cf.js"><link rel="prefetch" href="/assets/js/132.7864f0c5.js"><link rel="prefetch" href="/assets/js/133.aeafdd91.js"><link rel="prefetch" href="/assets/js/134.8a218b55.js"><link rel="prefetch" href="/assets/js/135.befc3a22.js"><link rel="prefetch" href="/assets/js/136.ec32cf2d.js"><link rel="prefetch" href="/assets/js/137.7ac0f702.js"><link rel="prefetch" href="/assets/js/138.72bfc9c2.js"><link rel="prefetch" href="/assets/js/139.5a863a01.js"><link rel="prefetch" href="/assets/js/14.290cb36e.js"><link rel="prefetch" href="/assets/js/140.f27f28e2.js"><link rel="prefetch" href="/assets/js/141.7565a60f.js"><link rel="prefetch" href="/assets/js/142.2e64f412.js"><link rel="prefetch" href="/assets/js/143.48ee7de5.js"><link rel="prefetch" href="/assets/js/144.bf60a6cf.js"><link rel="prefetch" href="/assets/js/145.b29e0081.js"><link rel="prefetch" href="/assets/js/146.aebadec9.js"><link rel="prefetch" href="/assets/js/147.ef81f716.js"><link rel="prefetch" href="/assets/js/148.37b1436d.js"><link rel="prefetch" href="/assets/js/149.137674ab.js"><link rel="prefetch" href="/assets/js/15.378109e6.js"><link rel="prefetch" href="/assets/js/150.6ac29410.js"><link rel="prefetch" href="/assets/js/151.1d8978fe.js"><link rel="prefetch" href="/assets/js/152.4dd1caa4.js"><link rel="prefetch" href="/assets/js/153.f71dc98b.js"><link rel="prefetch" href="/assets/js/154.9c3e6922.js"><link rel="prefetch" href="/assets/js/155.566eb07c.js"><link rel="prefetch" href="/assets/js/156.5773ac6d.js"><link rel="prefetch" href="/assets/js/157.733c74ae.js"><link rel="prefetch" href="/assets/js/158.368fe751.js"><link rel="prefetch" href="/assets/js/159.af79d3a4.js"><link rel="prefetch" href="/assets/js/16.22008244.js"><link rel="prefetch" href="/assets/js/160.5c7e9b39.js"><link rel="prefetch" href="/assets/js/161.2bc6524a.js"><link rel="prefetch" href="/assets/js/162.c323c71d.js"><link rel="prefetch" href="/assets/js/163.7352c855.js"><link rel="prefetch" href="/assets/js/164.adba7776.js"><link rel="prefetch" href="/assets/js/165.e4a9f519.js"><link rel="prefetch" href="/assets/js/166.97a8e6db.js"><link rel="prefetch" href="/assets/js/167.34910ef7.js"><link rel="prefetch" href="/assets/js/168.d6752a23.js"><link rel="prefetch" href="/assets/js/169.0575e7f3.js"><link rel="prefetch" href="/assets/js/17.c411d0bf.js"><link rel="prefetch" href="/assets/js/170.2b8d6ca6.js"><link rel="prefetch" href="/assets/js/171.77c53d3c.js"><link rel="prefetch" href="/assets/js/172.94f34ed8.js"><link rel="prefetch" href="/assets/js/173.78ebf17d.js"><link rel="prefetch" href="/assets/js/174.0a6b1bb2.js"><link rel="prefetch" href="/assets/js/175.50f7de76.js"><link rel="prefetch" href="/assets/js/176.ce8cdbd8.js"><link rel="prefetch" href="/assets/js/177.7b4ebf0a.js"><link rel="prefetch" href="/assets/js/178.6a863fac.js"><link rel="prefetch" href="/assets/js/179.df719de9.js"><link rel="prefetch" href="/assets/js/18.49ce348e.js"><link rel="prefetch" href="/assets/js/180.232da06a.js"><link rel="prefetch" href="/assets/js/181.e8a15aa9.js"><link rel="prefetch" href="/assets/js/19.457b97c4.js"><link rel="prefetch" href="/assets/js/20.3a3cbf21.js"><link rel="prefetch" href="/assets/js/21.8e717d10.js"><link rel="prefetch" href="/assets/js/22.49e03d3a.js"><link rel="prefetch" href="/assets/js/23.735c371c.js"><link rel="prefetch" href="/assets/js/24.b5fb66f0.js"><link rel="prefetch" href="/assets/js/25.d6bd260b.js"><link rel="prefetch" href="/assets/js/26.35c782b8.js"><link rel="prefetch" href="/assets/js/27.becc04e9.js"><link rel="prefetch" href="/assets/js/29.b32db475.js"><link rel="prefetch" href="/assets/js/30.98df5e0f.js"><link rel="prefetch" href="/assets/js/31.3f39a854.js"><link rel="prefetch" href="/assets/js/32.cfb80a2b.js"><link rel="prefetch" href="/assets/js/33.04afbac5.js"><link rel="prefetch" href="/assets/js/34.9bcb7959.js"><link rel="prefetch" href="/assets/js/35.e711be96.js"><link rel="prefetch" href="/assets/js/36.51d1f0b7.js"><link rel="prefetch" href="/assets/js/37.ed4ff1f2.js"><link rel="prefetch" href="/assets/js/38.5d00a06b.js"><link rel="prefetch" href="/assets/js/39.933e3c46.js"><link rel="prefetch" href="/assets/js/4.26c14f14.js"><link rel="prefetch" href="/assets/js/40.fe55c56b.js"><link rel="prefetch" href="/assets/js/41.612f7aae.js"><link rel="prefetch" href="/assets/js/42.591dbd1e.js"><link rel="prefetch" href="/assets/js/43.75a4b33e.js"><link rel="prefetch" href="/assets/js/44.1215c578.js"><link rel="prefetch" href="/assets/js/45.25e5278d.js"><link rel="prefetch" href="/assets/js/46.3772feb9.js"><link rel="prefetch" href="/assets/js/47.7c8fc33b.js"><link rel="prefetch" href="/assets/js/48.2865ac61.js"><link rel="prefetch" href="/assets/js/49.ec4f4be9.js"><link rel="prefetch" href="/assets/js/5.4ff0b5b6.js"><link rel="prefetch" href="/assets/js/50.5b401113.js"><link rel="prefetch" href="/assets/js/51.b563e194.js"><link rel="prefetch" href="/assets/js/52.bb519887.js"><link rel="prefetch" href="/assets/js/53.72717d06.js"><link rel="prefetch" href="/assets/js/54.ac236639.js"><link rel="prefetch" href="/assets/js/55.bff3c62e.js"><link rel="prefetch" href="/assets/js/56.0b4ef2b1.js"><link rel="prefetch" href="/assets/js/57.1806e275.js"><link rel="prefetch" href="/assets/js/58.3dfda0a9.js"><link rel="prefetch" href="/assets/js/59.adab08ca.js"><link rel="prefetch" href="/assets/js/6.4ed370e9.js"><link rel="prefetch" href="/assets/js/60.171754d7.js"><link rel="prefetch" href="/assets/js/61.450814c1.js"><link rel="prefetch" href="/assets/js/62.c070075c.js"><link rel="prefetch" href="/assets/js/63.334277a8.js"><link rel="prefetch" href="/assets/js/64.b5c9918e.js"><link rel="prefetch" href="/assets/js/65.e110a4f6.js"><link rel="prefetch" href="/assets/js/66.ec34322a.js"><link rel="prefetch" href="/assets/js/67.b478b5e8.js"><link rel="prefetch" href="/assets/js/68.a27bada6.js"><link rel="prefetch" href="/assets/js/69.58a6969b.js"><link rel="prefetch" href="/assets/js/7.1445cdc6.js"><link rel="prefetch" href="/assets/js/70.177fb6e3.js"><link rel="prefetch" href="/assets/js/71.48c15abd.js"><link rel="prefetch" href="/assets/js/72.280a39be.js"><link rel="prefetch" href="/assets/js/73.a53e010c.js"><link rel="prefetch" href="/assets/js/74.572ef5ba.js"><link rel="prefetch" href="/assets/js/75.d676daec.js"><link rel="prefetch" href="/assets/js/76.0f273ed9.js"><link rel="prefetch" href="/assets/js/77.31051b23.js"><link rel="prefetch" href="/assets/js/78.4066d9cc.js"><link rel="prefetch" href="/assets/js/79.0d3aa56a.js"><link rel="prefetch" href="/assets/js/8.bc731f91.js"><link rel="prefetch" href="/assets/js/80.d79f7210.js"><link rel="prefetch" href="/assets/js/81.3418c513.js"><link rel="prefetch" href="/assets/js/82.d18b7d2a.js"><link rel="prefetch" href="/assets/js/83.9c3f5393.js"><link rel="prefetch" href="/assets/js/84.7ac0b669.js"><link rel="prefetch" href="/assets/js/85.c51949d6.js"><link rel="prefetch" href="/assets/js/86.b316ed4e.js"><link rel="prefetch" href="/assets/js/87.388e4e03.js"><link rel="prefetch" href="/assets/js/88.90bda8ff.js"><link rel="prefetch" href="/assets/js/89.3c4ac2ea.js"><link rel="prefetch" href="/assets/js/9.00729029.js"><link rel="prefetch" href="/assets/js/90.f548bd4c.js"><link rel="prefetch" href="/assets/js/91.041415b0.js"><link rel="prefetch" href="/assets/js/92.fa2b69d6.js"><link rel="prefetch" href="/assets/js/93.e2c77e1a.js"><link rel="prefetch" href="/assets/js/94.e48f3022.js"><link rel="prefetch" href="/assets/js/95.5672da69.js"><link rel="prefetch" href="/assets/js/96.013e9e2d.js"><link rel="prefetch" href="/assets/js/97.47454694.js"><link rel="prefetch" href="/assets/js/98.3f0d44d6.js"><link rel="prefetch" href="/assets/js/99.5dbf6765.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.40853667.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-2d5f533b><div data-v-2d5f533b><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-2d5f533b data-v-2d5f533b><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-64685f0e data-v-2d5f533b data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>GuangJu'S NoteBook</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div class="hide" data-v-2d5f533b><header class="navbar" data-v-2d5f533b><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">GuangJu'S NoteBook</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-2d5f533b></div> <aside class="sidebar" data-v-2d5f533b><div class="personal-info-wrapper" data-v-ca798c94 data-v-2d5f533b><img src="/img/headimg.jpeg" alt="author-avatar" class="personal-img" data-v-ca798c94> <h3 class="name" data-v-ca798c94>
+    GuangJu
+  </h3> <div class="num" data-v-ca798c94><div data-v-ca798c94><h3 data-v-ca798c94>105</h3> <h6 data-v-ca798c94>Article</h6></div> <div data-v-ca798c94><h3 data-v-ca798c94>95</h3> <h6 data-v-ca798c94>Tag</h6></div></div> <hr data-v-ca798c94></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont reco-home"></i>
+  首页
+</a></div><div class="nav-item"><a href="/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  标签
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Frontend/HTML/HTML.html" class="nav-link"><i class="iconfont undefined"></i>
+  HTML &amp; H5
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS &amp; C3
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/CSS2/css1.html" class="nav-link"><i class="iconfont undefined"></i>
+  CSS 教程
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JS/js1.html" class="nav-link"><i class="iconfont undefined"></i>
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/ES6/ES01.html" class="nav-link"><i class="iconfont undefined"></i>
+  ES6
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Promise/promise.html" class="nav-link"><i class="iconfont undefined"></i>
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/JQuery/JQuery.html" class="nav-link"><i class="iconfont undefined"></i>
+  JQuery
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Ajax/Ajax.html" class="nav-link"><i class="iconfont undefined"></i>
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/Axios/axios.html" class="nav-link"><i class="iconfont undefined"></i>
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/Frontend/TS/ts1.html" class="nav-link"><i class="iconfont undefined"></i>
+  TypeScript
+</a></li><li class="dropdown-item"><!----> <a href="/Webpack/webpack1.html" class="nav-link"><i class="iconfont undefined"></i>
+  Webpack4.0
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-document"></i>
+      前端框架
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Framework/Vue/vue01.html" class="nav-link"><i class="iconfont undefined"></i>
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/React/React01.html" class="nav-link"><i class="iconfont undefined"></i>
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/Framework/Wechat/Wechat.html" class="nav-link"><i class="iconfont undefined"></i>
+  Wechat
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      后端技术
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Linux/debian.html" class="nav-link"><i class="iconfont undefined"></i>
+  Linux
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Mongodb/mongodb1.html" class="nav-link"><i class="iconfont undefined"></i>
+  MongoDB
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/Node/node2.html" class="nav-link"><i class="iconfont undefined"></i>
+  Node.js
+</a></li><li class="dropdown-item"><!----> <a href="/Backend/api.html" class="nav-link"><i class="iconfont undefined"></i>
+  Api
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      工具
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Tools/git.html" class="nav-link"><i class="iconfont undefined"></i>
+  git
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/yarn.html" class="nav-link"><i class="iconfont undefined"></i>
+  yarn
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/npm.html" class="nav-link"><i class="iconfont undefined"></i>
+  npm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/cmd.html" class="nav-link"><i class="iconfont undefined"></i>
+  cmd
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nrm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nrm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/nvm.html" class="nav-link"><i class="iconfont undefined"></i>
+  nvm
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/pm2.html" class="nav-link"><i class="iconfont undefined"></i>
+  pm2
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/serve.html" class="nav-link"><i class="iconfont undefined"></i>
+  serve
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/markdown.html" class="nav-link"><i class="iconfont undefined"></i>
+  MarkDown
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/terminal.html" class="nav-link"><i class="iconfont undefined"></i>
+  Terminal
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Trojan.html" class="nav-link"><i class="iconfont undefined"></i>
+  Trojan
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vite.html" class="nav-link"><i class="iconfont undefined"></i>
+  vite
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vuepress.html" class="nav-link"><i class="iconfont undefined"></i>
+  vuepress
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/upgrade.html" class="nav-link"><i class="iconfont undefined"></i>
+  升级依赖包
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/regex.html" class="nav-link"><i class="iconfont undefined"></i>
+  regex 正则
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/typecho.html" class="nav-link"><i class="iconfont undefined"></i>
+  Typecho 安装建站
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/Eslint.html" class="nav-link"><i class="iconfont undefined"></i>
+  Eslint 的使用和禁用
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/vscode.html" class="nav-link"><i class="iconfont undefined"></i>
+  VScode等配置文件
+</a></li><li class="dropdown-item"><!----> <a href="/Tools/wsl.html" class="nav-link"><i class="iconfont undefined"></i>
+  Win子系统
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont undefined"></i>
+      小知识
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/Project/shopingapp.html" class="nav-link"><i class="iconfont undefined"></i>
+  项目总结
+</a></li><li class="dropdown-item"><!----> <a href="/Other/" class="nav-link"><i class="iconfont undefined"></i>
+  学习内容
+</a></li><li class="dropdown-item"><!----> <a href="/Other/知识点.html" class="nav-link"><i class="iconfont undefined"></i>
+  知识点
+</a></li><li class="dropdown-item"><!----> <a href="/Other/面试题.html" class="nav-link"><i class="iconfont undefined"></i>
+  面试题
+</a></li><li class="dropdown-item"><!----> <a href="/Other/export.html" class="nav-link"><i class="iconfont undefined"></i>
+  export区别
+</a></li><li class="dropdown-item"><!----> <a href="/Other/name.html" class="nav-link"><i class="iconfont undefined"></i>
+  变量常用名
+</a></li><li class="dropdown-item"><!----> <a href="/Other/问题.html" class="nav-link"><i class="iconfont undefined"></i>
+  问题和报错
+</a></li><li class="dropdown-item"><!----> <a href="/Other/token.html" class="nav-link"><i class="iconfont undefined"></i>
+  token 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/网站黑白.html" class="nav-link"><i class="iconfont undefined"></i>
+  网站黑白
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Chrome.html" class="nav-link"><i class="iconfont undefined"></i>
+  Chrome 使用
+</a></li><li class="dropdown-item"><!----> <a href="/Other/浏览器内核.html" class="nav-link"><i class="iconfont undefined"></i>
+  浏览器和内核
+</a></li><li class="dropdown-item"><!----> <a href="/Other/URI&amp;URL.html" class="nav-link"><i class="iconfont undefined"></i>
+  URI &amp; URL
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Apache.html" class="nav-link"><i class="iconfont undefined"></i>
+  Apache 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/Nginx.html" class="nav-link"><i class="iconfont undefined"></i>
+  Nginx 是什么
+</a></li><li class="dropdown-item"><!----> <a href="/Other/error.html" class="nav-link"><i class="iconfont undefined"></i>
+  报 error 的本质和处理
+</a></li><li class="dropdown-item"><!----> <a href="/Other/验证码.html" class="nav-link"><i class="iconfont undefined"></i>
+  验证码 是什么
+</a></li></ul></div></div><div class="nav-item"><a href="/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  Timeline
+</a></div><div class="nav-item"><a href="/messages/" class="nav-link"><i class="iconfont reco-suggestion"></i>
+  留言
+</a></div><div class="nav-item"><a href="/About/" class="nav-link"><i class="iconfont undefined"></i>
+  关于
+</a></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>React</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Framework/React/react01.html" aria-current="page" class="active sidebar-link">React 起步</a></li><li><a href="/Framework/React/react02.html" class="sidebar-link">React jsx文件</a></li><li><a href="/Framework/React/react03.html" class="sidebar-link">React  class、函数组件</a></li><li><a href="/Framework/React/react04.html" class="sidebar-link">React 类组件 State</a></li><li><a href="/Framework/React/react05.html" class="sidebar-link">React 组件传值</a></li><li><a href="/Framework/React/react06.html" class="sidebar-link">React 条件渲染/循环渲染</a></li><li><a href="/Framework/React/react07.html" class="sidebar-link">React 受控组件与非受控组件</a></li><li><a href="/Framework/React/react08.html" class="sidebar-link">React class的生命周期</a></li><li><a href="/Framework/React/react09.html" class="sidebar-link">React createContext 上下文</a></li><li><a href="/Framework/React/react10.html" class="sidebar-link">React propTypes/高阶组件</a></li><li><a href="/Framework/React/react11.html" class="sidebar-link">React Hooks</a></li><li><a href="/Framework/React/react12.html" class="sidebar-link">React Router</a></li><li><a href="/Framework/React/react13.html" class="sidebar-link">React 使用Sass</a></li><li><a href="/Framework/React/react14.html" class="sidebar-link">React Redux</a></li><li><a href="/Framework/React/react&amp;vue.html" class="sidebar-link">React 和 Vue 对比总结</a></li><li><a href="/Framework/React/react.html" class="sidebar-link">React 优化</a></li><li><a href="/Framework/React/router_doc.html" class="sidebar-link">React Router翻译文档</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-64685f0e data-v-2d5f533b><h3 class="title" style="display:none;" data-v-64685f0e data-v-64685f0e>React 起步</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-64685f0e data-v-64685f0e><input type="password" value="" data-v-64685f0e> <span data-v-64685f0e>Konck! Knock!</span> <button data-v-64685f0e>OK</button></label> <div class="footer" style="display:none;" data-v-64685f0e data-v-64685f0e><span data-v-64685f0e><i class="iconfont reco-theme" data-v-64685f0e></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-64685f0e>vuePress-theme-reco</a></span> <span data-v-64685f0e><i class="iconfont reco-copyright" data-v-64685f0e></i> <a data-v-64685f0e><span data-v-64685f0e>GuangJu</span>
+            
+          <span data-v-64685f0e>2017 - </span>
+          2021
+        </a></span></div></div> <div data-v-2d5f533b><main class="page"><div class="page-title" style="display:none;"><h1 class="title">React 起步</h1> <div data-v-3b7f5bdf><i class="iconfont reco-account" data-v-3b7f5bdf><span data-v-3b7f5bdf>GuangJu</span></i> <i class="iconfont reco-date" data-v-3b7f5bdf><span data-v-3b7f5bdf>2019-03-26</span></i> <i class="iconfont reco-eye" data-v-3b7f5bdf><span id="/Framework/React/react01.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-3b7f5bdf><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="iconfont reco-tag tags" data-v-3b7f5bdf><span class="tag-item" data-v-3b7f5bdf>react</span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h2 id="react-介绍"><a href="#react-介绍" class="header-anchor">#</a> React 介绍</h2> <p>【面试的时候，可能会问到】</p> <ol><li><code>react</code> 是干什么的？</li></ol> <p>构建用户界面的<code>javascript</code>库。</p> <ol start="2"><li><code>react</code> 能干什么？</li></ol> <p>开发网站，单页面应用，手机 <code>app</code></p> <p><code>vue</code> 和 <code>react</code> 几乎在使用上和原理上非常的相似，<code>vue</code> 最初就是借鉴的
+<code>react</code> 思想开发的</p> <ul><li><code>react</code> 好处：</li></ul> <p><code>api</code> 非常少，使用起来很简单，灵活。</p> <p><code>react</code> 函数式编程思想（声明式编程）</p> <h2 id="react-原理"><a href="#react-原理" class="header-anchor">#</a> react 原理</h2> <p><code>vue</code> 单向数据流 <code>!=</code> 数据单向绑定</p> <p>他和 <code>vue</code> 不同的地方：数据单向绑定的</p> <ul><li>【数据流例子说明：】</li></ul> <p>父组件 变量 传递给 子组件 子组件可以修改传递过来的变量吗？不可以，为什么，因为数据流是单向的，也就是说从父级传递过来的数据，子组件只能用，不能改。</p> <ul><li><code>react</code>【数据单向绑定】</li></ul> <p>也就是说，他不能自动的监听到数据的变化，不能自动实现 <code>vue</code> 中数据双向绑定
+我们在 <code>react</code> 中要实现双向绑定，需要手动的设置 <code>setState</code>.</p> <ol><li><p>数据单向绑定</p></li> <li><p>数据流--单向数据流</p></li> <li><p>基于函数和类运作的【函数组件和类组件】</p></li></ol> <h2 id="官网的阅读【自学】"><a href="#官网的阅读【自学】" class="header-anchor">#</a> 官网的阅读【自学】</h2> <ol><li><p><a href="https://react.docschina.org/" target="_blank" rel="noopener noreferrer">中文官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、 <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">英文官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>文档 --&gt; 核心概念【初级的基础知识】--&gt;高级指引【中级】 --&gt;HOOK【高级用法】</p></li></ol> <h2 id="函数组件-基本布局"><a href="#函数组件-基本布局" class="header-anchor">#</a> 函数组件&amp;基本布局</h2> <p>函数组件：就是一个函数返回一段 <code>dom</code> 片段</p> <h3 id="模块化开发【面试题】"><a href="#模块化开发【面试题】" class="header-anchor">#</a> 模块化开发【面试题】</h3> <ul><li>好处：解耦，便于维护和开发</li> <li>复用：哪儿用就给它引入到哪儿</li></ul> <h3 id="react-里-样式是没有作用域控制的"><a href="#react-里-样式是没有作用域控制的" class="header-anchor">#</a> react 里，样式是没有作用域控制的</h3> <p>也就是说，你在任何地方写的样式都会影响到全局样式</p> <ul><li>所以样式类名需要额外的注意</li> <li><code>jsincss</code> 【这是一种解决方案】 <code>module.css</code> 【官方配置好的一种解决方案】 <code>scss</code>【<code>css</code>预处理器,利用嵌套的语法避免冲突】</li></ul> <h2 id="创建-react-项目"><a href="#创建-react-项目" class="header-anchor">#</a> 创建 react 项目</h2> <ol><li>创建项目前</li></ol> <p>如果你电脑上安装过 <code>create-react-app</code> 脚手架 需要卸载(新版本换了创建命令)</p> <div class="language-js extra-class"><pre class="language-js"><code>npm unistall <span class="token operator">-</span>g create<span class="token operator">-</span>react<span class="token operator">-</span>app
+</code></pre></div><ol start="2"><li>创建项目命令</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>npx create<span class="token operator">-</span>react<span class="token operator">-</span>app myappname
+</code></pre></div><p>【myappname】:项目名称，不可以叫 <code>react</code>等（关键字） 也不许有驼峰命名</p> <ul><li><code>npx</code></li></ul> <p><code>npx</code> 是运行本地 <code>node_modules</code> 包里依赖的，如果没找到，就临时下载，使用完之后把下载的依赖删掉，用 <code>npx</code> 好处是保证了依赖版本的新鲜度【每次都是最新版本】，<code>npm</code> 先运行本地项目，如果没找到去本机全局里找</p> <details class="custom-block details"><summary>另一种创建(eject)</summary> <div class="language-js extra-class"><pre class="language-js"><code>npx create<span class="token operator">-</span>react<span class="token operator">-</span>app myappname
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>git add <span class="token operator">--</span>all
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>git commit <span class="token operator">-</span>m <span class="token string">'sss'</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>yarn eject
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>yarn
+<span class="token comment">//或</span>
+npm i <span class="token comment">// 安装依赖（感觉此项多余）</span>
+</code></pre></div><p>安装<code>scss</code></p> <div class="language-js extra-class"><pre class="language-js"><code>yarn add node<span class="token operator">-</span>sass<span class="token operator">-</span>chokidar
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>yarn add npm<span class="token operator">-</span>run<span class="token operator">-</span>all
+</code></pre></div><p>修改<code>package.json</code></p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token string">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;build-css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node-sass-chokidar src/ -o src/&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;watch-css&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run build-css &amp;&amp; node-sass-chokidar src/ -o src/ --watch --recursive&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;start-js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node scripts/start.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;start&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm-run-all -p watch-css start-js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;build-js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node scripts/build.js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm-run-all build-css build-js&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node scripts/test.js --env=jsdom&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+</code></pre></div></details> <h2 id="项目结构"><a href="#项目结构" class="header-anchor">#</a> 项目结构</h2> <div class="language-js extra-class"><pre class="language-js"><code>    Project
+       ├─── node_modules
+       ├─── <span class="token keyword">public</span>
+       │      ├── favicom<span class="token punctuation">.</span>ico
+       │      ├── index<span class="token punctuation">.</span>html
+       │      └── <span class="token operator">...</span>
+       ├─── src
+       │      ├── index<span class="token punctuation">.</span>js
+       │      ├── components
+       │      └── <span class="token operator">...</span>
+       ├─── <span class="token punctuation">.</span>gitignore
+       ├─── <span class="token keyword">package</span><span class="token punctuation">.</span>json
+       └─── <span class="token constant">README</span><span class="token punctuation">.</span>md
+</code></pre></div><ul><li><p><code>node_modules</code>:项目依赖包。它是我们项目启动时所需要运行的依赖</p></li> <li><p><code>public</code> ：静态资源。是我们 <code>html</code> 模板所在的公共文件夹，如果你在 <code>public</code> 里面放了一个静态资源【<code>css</code> 文件，<code>js</code> 文件,图片，字体】，那么当打包的时候，这些文件不会被编译;</p> <ul><li><code>favicom.ico</code>:网站标题的图标;</li> <li><code>index.html</code>:渲染的根页面（<code>root</code>）;</li></ul></li> <li><p><code>.gitignore</code>:<code>git</code>时忽略的文件。是一份告诉 <code>git</code> 提交的筛选名单,里面的<code>/node_modules</code> 就是告诉 <code>git</code> 存代码的时候把<code>node_modules</code> 目录过滤掉，并不提交到<code>github</code>.</p></li> <li><p><code>package.json</code> ：是 <code>node_modules</code> 包依赖的清单目录，也就是说我 <code>npm</code> 安装的所有的依赖名字都会写入到 <code>package.json</code> 里去；还有它包含我们启动项目的脚本（<code>scitpts</code>里面的内容），打包项目等命令所在文件。<code>package.json</code>的作用：依赖的清单，命令的运行</p> <ul><li>在<code>scripts</code>里，有个<code>eject</code> 命令，是为了讲打包配置暴露到项目里的（会在项目根目录里创建一个<code>config</code>文件夹），但是运行<code>eject</code>命令是不可逆的，慎用，我们可以用<code>customize-cra</code>第三方工具库</li></ul></li> <li><p><code>README.md</code> 项目说明文档，不要删除，为什么？因为在 GitHub <code>里开启静态服务也没，如果没有这个文件，你开启是不会成功的，而且，GitHub</code> 他也不会提示你缺这个文件，所以比较坑，一定不要删除</p></li> <li><p><code>src</code> 是我们开发的源码所在文件夹 【最重要的：<code>/src</code>】</p> <ol><li><code>.svg</code> 矢量图：不会失真，但是色彩值对比 <code>jpg</code> 少，色彩不是很丰富</li> <li><code>.svg</code> 我们前端完全可以手写出来。当然没人那么做，都是用软件生成，比如 ps</li> <li><code>serviceWorker.js</code> 做离线缓存的，【离线==断网】在断网的情况下，我们的页面还是可以正常打开和访问的，不会出现 404,只是 <code>ajax</code> 功能失效。</li> <li><code>src</code> 下默认的哪些可以删：除了 <code>index.js</code>（入口文件是src/index.js） 其他的都可以删。</li></ol> <ul><li><p>为什么删？</p> <p>因为我们要重构自己的项目结构在公司里开发项目，是有一个项目结构开发规范。</p></li></ul></li></ul> <table><thead><tr><th style="text-align:left;">目录</th> <th style="text-align:left;">功能</th></tr></thead> <tbody><tr><td style="text-align:left;"><code>/src/</code></td> <td style="text-align:left;">项目主目录</td></tr> <tr><td style="text-align:left;"><code>/view</code></td> <td style="text-align:left;">存放我们页面级的组件</td></tr> <tr><td style="text-align:left;"><code>/components</code></td> <td style="text-align:left;">viwe 组件里公用的一些弹窗之类的</td></tr> <tr><td style="text-align:left;"><code>/api</code></td> <td style="text-align:left;">把整个项目里所有的 ajax 请求写在这</td></tr> <tr><td style="text-align:left;"><code>/tools</code></td> <td style="text-align:left;">转化时间，分割数组，功能性纯 js 文件</td></tr> <tr><td style="text-align:left;"><code>/assets</code></td> <td style="text-align:left;">静态资源</td></tr> <tr><td style="text-align:left;"><code>/index.js</code></td> <td style="text-align:left;">入口文件 <strong>位置不可变,必须的</strong></td></tr></tbody></table> <h2 id="运行项目"><a href="#运行项目" class="header-anchor">#</a> 运行项目</h2> <ol><li>启动本地项目开发环境</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>npm run start  或 yarn start
+</code></pre></div><ol start="2"><li>打包 <code>src</code> 源码，变成原始的 <code>js</code> 和 <code>html</code></li></ol> <div class="language-js extra-class"><pre class="language-js"><code>npm run build
+</code></pre></div><p>还是需要使用服务端启动,如下：</p> <div class="language-js extra-class"><pre class="language-js"><code>npm install <span class="token operator">-</span>g serve
+和
+serve <span class="token operator">-</span>s build
+</code></pre></div><ol start="3"><li>释放我们项目<strong>官方</strong>配置文件，且该命令只能运行这一次，操作不可逆。</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>npm run eject
+</code></pre></div><p><code>npm run eject</code> 一般是用不到的，官网提供了自定义配置接口，如果想改变项目里的官方配置，需要释放配置，再运行这个命令</p> <ul><li>【坑】  <code>npm run eject</code> 我们创建项目的时候，官方会给初始化一个 <code>git</code> 仓库，这时候使用的时候要先把代码提交到 <code>git</code> 里或者，把 <code>git</code> 仓库删掉,<code>react</code> 才会区分出来这个组件是原生标签还是自定义的</li></ul> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>当我们拿到一个项目，一般来说都不会给你项目里带着 <code>node_modules</code> 包的，那就需要我们自己安装所有依赖。</p></div> <ul><li>想要运行项目需要先执行以下命令：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>npm install 或者 yarn
+</code></pre></div><p>当使用 <code>npm</code> 命令的时候，<code>npm</code> 就会读取 <code>package.json</code>，然后会把你依赖清单里的名字全部下载下来。</p> <h2 id="组件传值"><a href="#组件传值" class="header-anchor">#</a> 组件传值</h2> <ol><li>父传子：props</li> <li>子传父：调用父组件的函数</li> <li>跨级：context redux</li></ol> <h2 id="其他"><a href="#其他" class="header-anchor">#</a> 其他</h2> <p><code>react</code>引入的库</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// render</span>
+react<span class="token operator">-</span>dom
+<span class="token comment">//  路由</span>
+react<span class="token operator">-</span>route<span class="token operator">-</span>dom
+react<span class="token operator">-</span>route
+<span class="token comment">// redux</span>
+react<span class="token operator">-</span>Redux
+redux
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><!----> <div class="last-updated"><span class="prefix">Last Updated: </span> <span class="time">1/24/2021, 9:30:42 PM</span></div></footer> <!----> <!----> <!----></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是guangju欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="150" height="220" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div><canvas id="vuepress-canvas-ribbon"></canvas><div><div class="sponsor-container" data-v-a142c76a><div class="sponsor-love position-absolute transition-3ms" data-v-a142c76a>
+    Sponsor
+  </div> <a href="https://github.com/yokefellow/vuepress-plugin-sponsor" target="_blank" title="Github" class="sponsor-github position-absolute transition-3ms" data-v-a142c76a></a> <ul class="sponsor-payment-options transition-3ms" data-v-a142c76a><li id="alipay-option" class="transition-3ms" data-v-a142c76a></li> <li id="wechat-option" class="transition-3ms" data-v-a142c76a></li> <li id="qq-option" class="transition-3ms" data-v-a142c76a></li> <li id="paypal-option" class="transition-3ms" data-v-a142c76a></li></ul> <div class="sponsor-qrcode-container position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a><div class="sponsor-qrcode-info" style="background-image:url();pointer-events:none;display:none;" data-v-a142c76a data-v-a142c76a></div></div> <div class="sponsor-message position-absolute" style="display:none;" data-v-a142c76a data-v-a142c76a>
+      主人忘记设置啦
+    </div></div></div></div></div>
+    <script src="/assets/js/app.acb9cd7c.js" defer></script><script src="/assets/js/3.76545830.js" defer></script><script src="/assets/js/1.12bc23b5.js" defer></script><script src="/assets/js/28.b52d36a0.js" defer></script>
+  </body>
+</html>
